@@ -80,14 +80,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       ) {
         return;
       }
-
-      if (event.key === "ArrowRight" && pathname === "/") {
-        // Right arrow on home page navigates to /ki
-        router.push("/ki");
-      } else if (event.key === "ArrowLeft" && pathname === "/ki") {
-        // Left arrow on /ki navigates back to home page
-        router.push("/");
-      }
     };
 
     window.addEventListener("keydown", handleKeyDown);

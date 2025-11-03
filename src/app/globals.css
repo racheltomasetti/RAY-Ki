@@ -51,7 +51,7 @@ html.light {
   --ui-2: var(--color-flexoki-light-ui-2);
   --ui-3: var(--color-flexoki-light-ui-3);
   /* --accent: #e35336; */
-  --accent: rgb(192, 62, 53);
+  --accent: #af3029;
 
   /* --accent-2: #8f9779; */
   --accent-2: rgb(58, 169, 159);
@@ -112,12 +112,15 @@ body {
   }
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
+@keyframes bob {
+  0% {
+    transform: translateY(0px);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(-11px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 
@@ -129,8 +132,8 @@ body {
   animation: scale-in 0.3s ease-out;
 }
 
-.animate-spin-continuous {
-  animation: spin 11s linear infinite;
+.animate-bob {
+  animation: bob 4s ease-in-out infinite;
 }
 
 @theme inline {
