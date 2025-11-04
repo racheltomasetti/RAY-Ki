@@ -16,8 +16,8 @@ html.dark {
   --ui-2: var(--color-flexoki-dark-ui-2);
   --ui-3: var(--color-flexoki-dark-ui-3);
   /* --accent: #e35336; */
-  --accent: rgb(209, 77, 65);
-  --accent-2: rgb(58, 169, 159);
+  --accent: #af3029;
+  --accent-2: #24837b;
 
   /* Color palette - 600 series (darker shades) for dark theme */
   --re: #af3029; /* Red */
@@ -52,9 +52,8 @@ html.light {
   --ui-3: var(--color-flexoki-light-ui-3);
   /* --accent: #e35336; */
   --accent: #af3029;
-
   /* --accent-2: #8f9779; */
-  --accent-2: rgb(58, 169, 159);
+  --accent-2: #24837b;
 
   /* Color palette - 600 series (darker shades) for light theme */
   --re: #af3029; /* Red */
@@ -134,6 +133,43 @@ body {
 
 .animate-bob {
   animation: bob 4s ease-in-out infinite;
+}
+
+/* Custom audio player styling */
+audio.audio-player {
+  font-family: var(--font-perpetua), serif !important;
+  background: var(--ui) !important;
+  border-radius: 8px;
+  outline: none;
+}
+
+audio.audio-player::-webkit-media-controls-panel {
+  background-color: var(--ui) !important;
+}
+
+audio.audio-player::-webkit-media-controls-enclosure {
+  background-color: var(--ui) !important;
+}
+
+audio.audio-player::-webkit-media-controls-current-time-display,
+audio.audio-player::-webkit-media-controls-time-remaining-display {
+  color: var(--tx) !important;
+}
+
+audio.audio-player::-webkit-media-controls-play-button,
+audio.audio-player::-webkit-media-controls-mute-button,
+audio.audio-player::-webkit-media-controls-toggle-closed-captions-button,
+audio.audio-player::-webkit-media-controls-fullscreen-button,
+audio.audio-player::-internal-media-controls-overflow-button {
+  filter: invert(1) brightness(0.9) !important;
+}
+
+html.light audio.audio-player::-webkit-media-controls-play-button,
+html.light audio.audio-player::-webkit-media-controls-mute-button,
+html.light audio.audio-player::-webkit-media-controls-toggle-closed-captions-button,
+html.light audio.audio-player::-webkit-media-controls-fullscreen-button,
+html.light audio.audio-player::-internal-media-controls-overflow-button {
+  filter: none !important;
 }
 
 @theme inline {
