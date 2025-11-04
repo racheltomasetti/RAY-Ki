@@ -78,9 +78,9 @@ export default function Home() {
                     i am disgusting. i hate every cell in my being.
                   </em>{" "}
                   i remember thinking how excited i was for seven years to pass
-                  so that all of my body's cells could regenerate and i would be
-                  reborn a new person. that i could erase this memory from my
-                  body.
+                  so that all of my body&apos;s cells could regenerate and i
+                  would be reborn a new person. that i could erase this memory
+                  from my body.
                 </p>
               </div>
 
@@ -109,8 +109,8 @@ export default function Home() {
                   to the hospital. where i threw up in the uber and my limp body
                   had to be loaded onto a stretcher and into the ambulance.
                   where they had to cut the jeans from my body and put me
-                  through an MRI to see if i'd caused any permanent damage to my
-                  brain.
+                  through an MRI to see if i&apos;d caused any permanent damage
+                  to my brain.
                 </p>
                 <p className="text-base leading-relaxed">
                   none of this i remembered, of course.
