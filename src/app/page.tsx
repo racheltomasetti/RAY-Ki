@@ -11,14 +11,52 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <section className="space-y-8">
             {/* THE STORY OF BUILDING K·I | ME */}
+
+            {/* Icon at top center */}
+            <div className="flex justify-center">
+              <Image
+                src="/icon.png"
+                alt="K·I Logo"
+                width={50}
+                height={50}
+                className="rounded-full animate-bob"
+                priority
+              />
+            </div>
+            {/* Horizontal divider */}
+            <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
+            {/* Horizontal divider */}
+            <hr className="border-b border-[var(--ui-2)] w-1/2 mx-auto opacity-70" />
+            {/* Horizontal divider */}
+            <hr className="border-b border-[var(--ui-2)] w-3/4 mx-auto opacity-70" />
+            {/* Horizontal divider */}
+            <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
+
             <div className="p-2 flex items-center justify-center gap-4">
               <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center whitespace-nowrap ">
                 ~ K·I ~
               </h1>
             </div>
+
+            {/* Key Vision */}
+            <p className="text-lg md:text-xl text-[var(--tx)] text-center font-bold">
+              <span className="text-[var(--accent-2)] italic">
+                ~ · unlock the mind
+              </span>{" "}
+              |{" "}
+              <span className="text-[var(--accent)] italic">
+                return to Self · ~
+              </span>
+            </p>
+
             {/* Horizontal divider */}
             <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
-
+            {/* Horizontal divider */}
+            <hr className="border-b border-[var(--ui-2)] w-3/4 mx-auto opacity-70" />
+            {/* Horizontal divider */}
+            <hr className="border-b border-[var(--ui-2)] w-1/2 mx-auto opacity-70" />
+            {/* Horizontal divider */}
+            <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
             {/* Icon at top center */}
             <div className="flex justify-center">
               <Image
@@ -35,7 +73,7 @@ export default function Home() {
             <div className="space-y-6">
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold text-[var(--accent)] italic text-center ">
-                  ~ K·I ~ origin story
+                  · origin story of ~ K·I ~ ·
                 </h2>
 
                 <h3 className="text-2xl font-bold text-[var(--accent-2)] italic text-center">
@@ -44,8 +82,7 @@ export default function Home() {
                 <p className="text-sm italic text-[var(--tx-2)] text-center">
                   [march 2022] {"{"}mindset ~ i have life all figured out.{"}"}
                 </p>
-                {/* horizontal divider */}
-                <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
+
                 <p className="text-base leading-relaxed">
                   freshman year consisted of a series of blackouts. one of the{" "}
                   <em>freakiest neurological occurences</em> also happens to be
@@ -96,7 +133,7 @@ export default function Home() {
                 </div>
 
                 <h3 className="text-2xl font-bold text-[var(--accent-2)] italic text-center">
-                  · falling still ·
+                  ~ falling still ~
                 </h3>
                 <p className="text-base leading-relaxed">
                   following this blackout, i fell deeper into my destructive
@@ -179,7 +216,17 @@ export default function Home() {
                 </p>
               </div>
             </div>
-
+            {/* Icon at top center */}
+            <div className="flex justify-center">
+              <Image
+                src="/icon.png"
+                alt="K·I Logo"
+                width={50}
+                height={50}
+                className="rounded-full animate-bob"
+                priority
+              />
+            </div>
             {/* Horizontal divider */}
             <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
             {/* Icon at top center */}
@@ -461,6 +508,17 @@ From Old English 'nu' meaning `now, at present,` from Proto-Germanic '* QWZS  QW
               </div>
 
               <br />
+              {/* Icon at top center */}
+              <div className="flex justify-center">
+                <Image
+                  src="/icon.png"
+                  alt="K·I Logo"
+                  width={50}
+                  height={50}
+                  className="rounded-full animate-bob"
+                  priority
+                />
+              </div>
             </div>
 
             {/* Horizontal divider */}
@@ -478,9 +536,9 @@ From Old English 'nu' meaning `now, at present,` from Proto-Germanic '* QWZS  QW
             </div>
 
             {/* building me */}
-            <div className="space-y-6 py-8">
-              <h2 className="text-3xl font-bold text-[var(--accent-2)] italic text-center">
-                ~ building me ~
+            <div className="space-y-6">
+              <h2 className="text-3xl font-bold text-[var(--accent)] italic text-center">
+                ~ · BUILDING ME · ~
               </h2>
 
               <div className="max-w-3xl mx-auto space-y-4 text-center">
@@ -489,7 +547,7 @@ From Old English 'nu' meaning `now, at present,` from Proto-Germanic '* QWZS  QW
                   wondering: how did we get here?
                 </p>
                 <p className="text-base leading-relaxed font-semibold">
-                  everything contributed. every single day.
+                  everything. every single day.
                 </p>
                 <p className="text-base leading-relaxed">
                   three years of learning, growing, building, breaking. rewiring
@@ -512,6 +570,40 @@ From Old English 'nu' meaning `now, at present,` from Proto-Germanic '* QWZS  QW
                 <p className="text-base leading-relaxed font-semibold text-[var(--accent-2)]">
                   that&apos;s when everything fell into place.
                 </p>
+
+                {/* the time is now */}
+                <div className="py-6">
+                  <div className="flex flex-col items-center">
+                    <Image
+                      src="/story/media/photos/the-time-is-now.png"
+                      alt="The time is now - GitHub contributions"
+                      width={800}
+                      height={400}
+                      quality={95}
+                      className="rounded-md"
+                    />
+                    <p className="text-sm italic text-[var(--tx-2)] mt-4 text-center max-w-2xl">
+                      the power of NOW. the green squares show when i was
+                      building—pushing code, showing up daily. the gray stretch
+                      of boxes reveals when i kept dreaming, felt frustrated and
+                      lost, but was not building. then on{" "}
+                      <span className="font-bold text-[var(--accent)]">
+                        september 21, 2024
+                      </span>
+                      , i started building consistently. and that&apos;s when
+                      everything fell into place.
+                    </p>
+                    <a
+                      href="https://github.com/racheltomasetti"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[var(--accent-2)] hover:font-bold hover:underline transition-colors duration-200 text-sm font-medium mt-2 italic"
+                    >
+                      view my github →
+                    </a>
+                  </div>
+                </div>
+
                 <p className="text-base leading-relaxed">
                   because building K·I and building me were never separate
                   journeys. they are one and the same. all of my experiences,
@@ -520,18 +612,43 @@ From Old English 'nu' meaning `now, at present,` from Proto-Germanic '* QWZS  QW
                   need, who i am. the building of this tool is shaping me as
                   much as i am shaping it.
                 </p>
-                <p className="text-base leading-relaxed font-semibold">
-                  that&apos;s how we got here. that&apos;s how you get there,
-                  wherever it is you desire to go.
+                <p className="text-base leading-relaxed font-semibold text-[var(--accent-2)]">
+                  so that is how we got here.
+                </p>
+                <p className="text-base leading-relaxed font-semibold text-[var(--accent-2)]">
+                  and that is how you get there, wherever it is you desire.
                 </p>
                 <p className="text-base leading-relaxed text-[var(--accent)] italic font-bold">
-                  one day at a time. live in the NOW.
+                  one day at a time.
                 </p>
+                <p className="text-base leading-relaxed text-[var(--accent)] italic font-bold">
+                  live in the NOW.
+                </p>
+              </div>
+              {/* Icon at top center */}
+              <div className="flex justify-center">
+                <Image
+                  src="/icon.png"
+                  alt="K·I Logo"
+                  width={50}
+                  height={50}
+                  className="rounded-full animate-bob"
+                  priority
+                />
               </div>
               {/* Horizontal divider */}
               <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
-              <br />
-              <br />
+              {/* Icon at top center */}
+              <div className="flex justify-center">
+                <Image
+                  src="/icon.png"
+                  alt="K·I Logo"
+                  width={50}
+                  height={50}
+                  className="rounded-full animate-bob"
+                  priority
+                />
+              </div>
               <br />
               {/* Photo */}
               <div className="flex flex-col items-center py-3">
@@ -567,27 +684,37 @@ From Old English 'nu' meaning `now, at present,` from Proto-Germanic '* QWZS  QW
                 [katherine anne porter ~ the future is now]
               </p>
               <br />
-              {/* Icon at top center */}
-              <div className="flex justify-center">
-                <Image
-                  src="/icon.png"
-                  alt="K·I Logo"
-                  width={50}
-                  height={50}
-                  className="rounded-full animate-bob"
-                  priority
-                />
-              </div>
+            </div>
+            {/* Icon at top center */}
+            <div className="flex justify-center">
+              <Image
+                src="/icon.png"
+                alt="K·I Logo"
+                width={50}
+                height={50}
+                className="rounded-full animate-bob"
+                priority
+              />
             </div>
             {/* Horizontal divider */}
             <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
-            {/* acknowledgements section */}
-            <div className="space-y-6 py-8">
-              <h2 className="text-3xl font-bold text-[var(--accent-2)] italic text-center">
-                ~ Acknowledgements ~
-              </h2>
 
+            {/* acknowledgements section */}
+            <div className="space-y-6">
+              <h2 className="text-3xl font-bold text-[var(--accent)] italic text-center">
+                · ~ Acknowledgements ~ ·
+              </h2>
               <div className="max-w-3xl mx-auto space-y-6">
+                <p className="text-base leading-relaxed italic font-bold text-[var(--accent-2)]">
+                  i would be remiss if i did not take the time to thank all who
+                  have made me who i am today.
+                </p>
+                <p className="text-base leading-relaxed italic font-bold text-[var(--accent-2)]">
+                  for filling my life with{" "}
+                  <span className="font-bold text-[var(--accent)]">
+                    such love, curiousity, beauty, joy, inspiration...
+                  </span>
+                </p>
                 <div className="space-y-2">
                   <p className="text-base leading-relaxed">
                     <span className="font-bold text-[var(--accent-2)]">
@@ -631,6 +758,17 @@ From Old English 'nu' meaning `now, at present,` from Proto-Germanic '* QWZS  QW
                     endless memories. for DANCE. for sharing your heart and mind
                     with me and reminding me of the importance of now. for your
                     light, and for inspiring me every day.
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    <span className="font-bold text-[var(--accent-2)]">
+                      Thank you to
+                    </span>{" "}
+                    <span className="font-bold text-[var(--accent)]">
+                      Dr. Michael Alaia & Team, Professional PT,
+                    </span>
+                  </p>
+                  <p className="text-base leading-relaxed text-[var(--tx-2)] italic">
+                    for helping me heal my body and mind.
                   </p>
                 </div>
 
@@ -774,16 +912,27 @@ From Old English 'nu' meaning `now, at present,` from Proto-Germanic '* QWZS  QW
                     dreams, living and leading with love, sharing and spreading
                     it.
                   </p>
-                  <br />
                   <p className="text-base leading-relaxed italic text-[var(--tx-2)]">
                     i would not be the person i am today without all of you.
                   </p>
+
                   <br />
                   <p className="text-base leading-relaxed font-semibold text-[var(--accent)]">
                     you are my hero—this is for you.
                   </p>
                 </div>
               </div>
+            </div>
+            {/* Icon at top center */}
+            <div className="flex justify-center">
+              <Image
+                src="/icon.png"
+                alt="K·I Logo"
+                width={50}
+                height={50}
+                className="rounded-full animate-bob"
+                priority
+              />
             </div>
 
             {/* Horizontal divider */}
@@ -801,7 +950,7 @@ From Old English 'nu' meaning `now, at present,` from Proto-Germanic '* QWZS  QW
             </div>
             <h1 className="text-base mt-4 text-[var(--tx)] font-bold text-center">
               <span className="text-[var(--accent)]">BUILT WITH LOVE</span> |{" "}
-              <span className="text-[var(--accent-2)]">BUILT WITH K·I</span>
+              <span className="text-[var(--accent-2)]">BUILT WITH ~ K·I ~</span>
             </h1>
 
             {/* Demo Section */}
