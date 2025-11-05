@@ -57,6 +57,12 @@ export default function Home() {
             <hr className="border-b border-[var(--ui-2)] w-1/2 mx-auto opacity-70" />
             {/* Horizontal divider */}
             <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
+            {/* living documentation disclaimer */}
+            <p className="text-base leading-relaxed text-[var(--tx-2)] italic text-center">
+              here you will find the living documentation of ~ K·I ~ as it is
+              being built.
+            </p>
+
             {/* Icon at top center */}
             <div className="flex justify-center">
               <Image
@@ -68,6 +74,8 @@ export default function Home() {
                 priority
               />
             </div>
+            {/* Horizontal divider */}
+            <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
 
             {/* origin story section */}
             <div className="space-y-6">
