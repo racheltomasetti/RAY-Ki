@@ -753,10 +753,11 @@ From Old English 'nu' meaning `now, at present,` from Proto-Germanic '* QWZS  QW
                       Humza Raza, Jamie Narciso, Katherine Weiner, Leah
                       Castaneda, Luke Barrientos, Maggie Rush, Michael Zvon,
                       Miranda Bialek, Morgan Krempasky, Nate Joseph, Nick
-                      Agliardo, Owen Gaydos, Pramiti Dubey, Sam Lattanze, Sam
-                      Yoon, Sammy Tolani, Sebastian Baez, Shea Coughlin, Skyler
-                      Kahng, Sydney Giordano, Tasha Riek, Taylor Dutil, Tyler
-                      Greene, Zoey Lee,
+                      Agliardo, Owen Gaydos, Prakul Singh, Pramiti Dubey,
+                      Prateek Mishra, Sam Lattanze, Sam Yoon, Sammy Tolani,
+                      Sebastian Baez, Shea Coughlin, Skyler Kahng, Sydney
+                      Giordano, Tasha Riek, Taylor Dutil, Tyler Greene, Zoey
+                      Lee,
                     </span>
                   </p>
                   <p className="text-base leading-relaxed text-[var(--tx-2)] italic">
