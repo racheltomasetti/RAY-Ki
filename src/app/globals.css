@@ -123,6 +123,30 @@ body {
   }
 }
 
+@keyframes spin-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(3960deg); /* 11 clockwise rotations */
+  }
+  100% {
+    transform: rotate(0deg); /* 11 counter-clockwise rotations back */
+  }
+}
+
+@keyframes spin-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(3960deg); /* Match circle direction */
+  }
+  100% {
+    transform: rotate(0deg); /* Match circle direction */
+  }
+}
+
 .animate-fade-in {
   animation: fade-in 0.2s ease-out;
 }
@@ -133,6 +157,14 @@ body {
 
 .animate-bob {
   animation: bob 4s ease-in-out infinite;
+}
+
+.animate-spin-circle {
+  animation: spin-circle 88s linear infinite; /* 4s per rotation * 22 rotations */
+}
+
+.animate-spin-icon {
+  animation: spin-icon 88s linear infinite;
 }
 
 /* Custom audio player styling */
