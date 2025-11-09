@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 export default function SpinningIconCircle() {
   const [mounted, setMounted] = useState(false);
-  const iconCount = 10;
+  const iconCount = 8;
   const radius = 80; // Distance from center in pixels
   const containerSize = radius * 2 + 40; // radius * 2 + icon size
 

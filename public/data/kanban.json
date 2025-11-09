@@ -1,0 +1,60 @@
+{
+  "projects": {
+    "ki": {
+      "name": "builder-ki",
+      "colorClass": "accent",
+      "githubLink": "https://github.com/racheltomasetti/builder-ki"
+    },
+    "website": {
+      "name": "my-digital-garden",
+      "colorClass": "accent-2",
+      "githubLink": "https://github.com/racheltomasetti/my-digital-garden"
+    }
+  },
+  "cards": [
+    {
+      "id": "1",
+      "title": "[x] customizable agent prompt",
+      "githubLink": "https://github.com/racheltomasetti/builder-ki",
+      "description": "Implement ability for user to customize the agent prompt for the ki thinking partner.",
+      "processNotes": "",
+      "project": "ki",
+      "status": "done",
+      "dateCreated": "2025-11-09T10:30:00",
+      "dateCompleted": "2025-11-09T12:15:00"
+    },
+    {
+      "id": "2",
+      "title": "[x] website NOW kanban board",
+      "githubLink": "https://github.com/racheltomasetti/my-digital-garden",
+      "description": "Interactive Kanban board displaying current projects and tasks in the 'about the builder' section. Features three columns (To Do, Doing, Done) with color-coded cards based on project type. Cards expand inline to show detailed breakdowns, process notes, and timestamps.",
+      "processNotes": "Built with React components, uses existing Flexoki theme variables for consistency. Data stored in JSON for easy updates. Designed to be API-ready for future dynamic updates.",
+      "project": "website",
+      "status": "done",
+      "dateCreated": "2025-11-09T12:19:00",
+      "dateCompleted": "2025-11-09T13:11:00"
+    },
+    {
+      "id": "3",
+      "title": "[ ] oura integration",
+      "githubLink": "https://github.com/racheltomasetti/builder-ki",
+      "description": "Integrate Oura Ring data into the ki AI. Allow users to view their sleep, activity, and readiness metrics in the journal.",
+      "processNotes": "Use the Oura API to fetch data and display it in the journal.",
+      "project": "ki",
+      "status": "todo",
+      "dateCreated": "2025-11-05T12:55:00",
+      "dateCompleted": null
+    },
+    {
+      "id": "4",
+      "title": "[ ] timer | calendar system",
+      "githubLink": "https://github.com/racheltomasetti/builder-ki",
+      "description": "Create a timer and calendar system for the ki AI. Allow users to set timers for their daily activities and view them in a calendar. Timer provides points of context for what the user is doing as they capture voice notes.",
+      "processNotes": "Create a timer component in the mobile app. Create calendar component in the web app.",
+      "project": "ki",
+      "status": "doing",
+      "dateCreated": "2025-11-07T18:45:00",
+      "dateCompleted": null
+    }
+  ]
+}

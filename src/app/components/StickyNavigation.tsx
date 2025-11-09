@@ -29,21 +29,21 @@ export default function StickyNavigation() {
           <div className="flex items-center gap-4 md:gap-8">
             <button
               onClick={() => scrollToSection("what-is-ki")}
-              className="text-xs md:text-base text-[var(--tx-2)] hover:text-[var(--accent)] transition-colors duration-200 font-medium"
+              className="text-sm md:text-lg lg:text-2xl text-[var(--tx-2)] hover:text-[var(--accent)] transition-colors duration-200 font-medium hover:font-bold"
             >
               what is ki
             </button>
             <button
               onClick={() => scrollToSection("how-it-works")}
-              className="text-xs md:text-base text-[var(--tx-2)] hover:text-[var(--accent)] transition-colors duration-200 font-medium whitespace-nowrap"
+              className="text-sm md:text-lg lg:text-2xl text-[var(--tx-2)] hover:text-[var(--accent)] transition-colors duration-200 font-medium whitespace-nowrap hover:font-bold"
             >
-              how it works
+              how ki works
             </button>
             <button
               onClick={() => scrollToSection("about-the-builder")}
-              className="text-xs md:text-base text-[var(--tx-2)] hover:text-[var(--accent)] transition-colors duration-200 font-medium whitespace-nowrap"
+              className="text-sm md:text-lg lg:text-2xl text-[var(--tx-2)] hover:text-[var(--accent)] transition-colors duration-200 font-medium whitespace-nowrap hover:font-bold"
             >
-              about the builder
+              building ki
             </button>
           </div>
         </div>

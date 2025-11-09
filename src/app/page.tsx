@@ -4,6 +4,7 @@ import Image from "next/image";
 import ClickableWord from "./components/ClickableWord";
 import SpinningIconCircle from "./components/SpinningIconCircle";
 import StickyNavigation from "./components/StickyNavigation";
+import KanbanBoard from "./components/kanban/KanbanBoard";
 
 export default function Home() {
   return (
@@ -119,36 +120,10 @@ export default function Home() {
                 priority
               />
             </div> */}
-            {/* bobbing ki */}
-            {/* <div className="flex justify-center">
-              <Image
-                src="/icon.png"
-                alt="ki logo"
-                width={50}
-                height={50}
-                className="rounded-full animate-bob"
-                priority
-              />
-            </div> */}
-            {/* bobbing ki */}
-            {/* <div className="flex justify-center">
-              <Image
-                src="/icon.png"
-                alt="ki logo"
-                width={50}
-                height={50}
-                className="rounded-full animate-bob"
-                priority
-              />
-            </div> */}
 
             {/* Horizontal divider */}
             <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
 
-            <p className="text-base leading-relaxed text-[var(--tx-2)] italic text-center">
-              here you will find the living documentation of ki as it is being
-              built.
-            </p>
             {/* Horizontal divider */}
             <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
             {/* Key Vision */}
@@ -371,16 +346,119 @@ From Old English 'nu' meaning `now, at present,` from Proto-Germanic '* QWZS  QW
             {/* how it works */}
             <div id="how-it-works" className="space-y-6">
               <h2 className="text-3xl font-bold text-[var(--accent)] italic text-center">
-                how it works
+                how ki works
               </h2>
             </div>
             {/* Horizontal divider */}
             <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
-            {/* about the builder */}
+            {/* building process */}
             <div id="about-the-builder" className="space-y-6">
-              <h2 className="text-3xl font-bold text-[var(--accent)] italic text-center">
-                about the builder
-              </h2>
+              {/* NOW Section with Kanban Board */}
+              <div className="space-y-6">
+                {/* bobbing ki */}
+                <div className="flex justify-center">
+                  <Image
+                    src="/icon.png"
+                    alt="ki logo"
+                    width={50}
+                    height={50}
+                    className="rounded-full animate-bob"
+                    priority
+                  />
+                </div>
+                <br />
+
+                {/* the future is now */}
+                <div className="bg-[var(--bg-2)] rounded-lg p-6 md:p-8 shadow-sm">
+                  <div className="flex flex-col items-center py-3">
+                    <Image
+                      src="/story/media/photos/future-is-now.jpg"
+                      alt="The future is now"
+                      width={600}
+                      height={400}
+                      quality={95}
+                      className="rounded-md"
+                    />
+
+                    {/* Quote */}
+                    <div className="text-center py-4 max-w-2xl mx-auto">
+                      <p className="text-base mt-4 text-[var(--tx-2)] italic">
+                        [
+                        <span className="font-bold text-[var(--accent-2)]">
+                          katherine anne porter
+                        </span>{" "}
+                        ~{" "}
+                        <span className="font-bold text-[var(--accent)]">
+                          the future is now
+                        </span>
+                        ]
+                      </p>
+                      <br />
+                      <br />
+                      <h3 className="text-3xl leading-relaxed italic text-[var(--tx-2)]">
+                        and it may be that what we have is a world not on the
+                        verge of flying apart, but{" "}
+                        <span className="font-bold text-[var(--accent)]">
+                          an uncreated one
+                        </span>{" "}
+                        --- still in shapeless fragments waiting to be put
+                        together properly.
+                      </h3>
+                      <br />
+                      <br />
+                    </div>
+
+                    <br />
+                  </div>
+                  <h2 className="text-5xl text-[var(--tx)] italic text-center">
+                    · build in the{" "}
+                    <span className="font-bold text-[var(--accent-2)]">
+                      NOW
+                    </span>
+                    ·
+                  </h2>
+                </div>
+                <br />
+                {/* bobbing ki */}
+                <div className="flex justify-center">
+                  <Image
+                    src="/icon.png"
+                    alt="ki logo"
+                    width={50}
+                    height={50}
+                    className="rounded-full animate-bob"
+                    priority
+                  />
+                </div>
+
+                <br />
+
+                <div className="bg-[var(--bg-2)] rounded-lg p-6 md:p-8 shadow-sm">
+                  <p className="text-7xl leading-relaxed text-[var(--accent)] font-bold italic text-center max-w-2xl mx-auto mb-6">
+                    ~ ki ~
+                  </p>
+                  {/* horizontal divider */}
+                  <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
+                  <br />
+                  <p className="text-2xl leading-relaxed text-[var(--tx)] opacity-90 italic text-center">
+                    · here you will find the living build documentation for ki ·
+                  </p>
+                  <br />
+                  {/* horizontal divider */}
+                  <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
+                  <br />
+                  <KanbanBoard />
+                </div>
+              </div>
+              {/* about the builder section */}
+              <div className="space-y-6">
+                <h3 className="text-2xl font-bold text-[var(--accent-2)] italic text-center">
+                  about the builder
+                </h3>
+                <p className="text-xl leading-relaxed text-[var(--tx-2)] italic text-center max-w-2xl mx-auto">
+                  hi! my name is rachel tomasetti and i am building ki.
+                </p>
+              </div>
             </div>
             {/* Horizontal divider */}
             <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
@@ -617,7 +695,7 @@ From Old English 'nu' meaning `now, at present,` from Proto-Germanic '* QWZS  QW
             {/* Horizontal divider */}
             <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
 
-            <h1 className="text-base mt-4 text-[var(--accent-2)] text-center italic">
+            <h1 className="text-base mt-4 text-[var(--tx-2)]  text-center italic">
               built with{" "}
               <span className="font-bold text-[var(--accent)]">ki</span>
             </h1>
