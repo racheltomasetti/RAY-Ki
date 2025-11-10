@@ -3,12 +3,14 @@
     "ki": {
       "name": "builder-ki",
       "colorClass": "accent",
-      "githubLink": "https://github.com/racheltomasetti/builder-ki"
+      "githubLink": "https://github.com/racheltomasetti/builder-ki",
+      "projectDescription": "where ki is being built"
     },
     "website": {
       "name": "my-digital-garden",
       "colorClass": "accent-2",
-      "githubLink": "https://github.com/racheltomasetti/my-digital-garden"
+      "githubLink": "https://github.com/racheltomasetti/my-digital-garden",
+      "projectDescription": "where ki is being shared"
     }
   },
   "cards": [
@@ -49,11 +51,33 @@
       "id": "4",
       "title": "[ ] timer | calendar system",
       "githubLink": "https://github.com/racheltomasetti/builder-ki",
-      "description": "Create a timer and calendar system for the ki AI. Allow users to set timers for their daily activities and view them in a calendar. Timer provides points of context for what the user is doing as they capture voice notes.",
+      "description": "Create a timer and calendar system for the ki ai. Allow users to set timers for their daily activities and view them in a calendar. Timer provides points of context for what the user is doing as they capture voice notes.",
       "processNotes": "Create a timer component in the mobile app. Create calendar component in the web app.",
       "project": "ki",
       "status": "doing",
       "dateCreated": "2025-11-07T18:45:00",
+      "dateCompleted": null
+    },
+    {
+      "id": "5",
+      "title": "what ki is section",
+      "githubLink": "https://github.com/racheltomasetti/my-digital-garden",
+      "description": "what ai and Self mean to me, founding principles: {mindset is foundation, importance of present moment, love as a way of life}",
+      "processNotes": "",
+      "project": "website",
+      "status": "todo",
+      "dateCreated": "2025-11-09T15:47:00",
+      "dateCompleted": null
+    },
+    {
+      "id": "6",
+      "title": "how ki works section",
+      "githubLink": "https://github.com/racheltomasetti/my-digital-garden",
+      "description": "how ki works, how it is being built, how it can be used, how it integrates into the user's life",
+      "processNotes": "",
+      "project": "website",
+      "status": "todo",
+      "dateCreated": "2025-11-09T16:00:00",
       "dateCompleted": null
     }
   ]

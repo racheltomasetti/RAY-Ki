@@ -25,10 +25,84 @@ export default function Home() {
 
               {/* ki header centered in the circle */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold italic text-[var(--accent)] text-center whitespace-nowrap">
+                <h1 className="text-7xl font-bold italic text-[var(--accent)] text-center whitespace-nowrap">
                   ki
                 </h1>
               </div>
+            </div>
+
+            {/* bobbing ki */}
+            <div className="flex justify-center">
+              <Image
+                src="/icon.png"
+                alt="ki logo"
+                width={50}
+                height={50}
+                className="rounded-full animate-bob"
+                priority
+              />
+            </div>
+            {/* about the builder section */}
+            <div className="bg-[var(--bg-2)] rounded-lg p-6 md:p-8 shadow-sm space-y-6 max-w-3xl mx-auto">
+              <h3 className="text-2xl font-bold text-[var(--accent-2)] italic text-center">
+                a message from the builder
+              </h3>
+
+              <p className="text-xl leading-relaxed text-[var(--tx-2)] italic text-center max-w-2xl mx-auto">
+                hi, welcome! i am so glad you are here. my name is ray and i am
+                building{" "}
+                <span className="text-[var(--accent)] font-bold">
+                  ki, AI for the Self—a tool that helps you become who you
+                  already are.
+                </span>
+              </p>
+
+              <p className="text-xl leading-relaxed text-[var(--tx-2)] italic text-center max-w-2xl mx-auto">
+                on may 28, 2023, i set an intention to become the best version
+                of myself. at that time, i was disconnected from my mind and
+                body, unsure of my purpose but driven by a desire to uncover it.
+                from that day forward, everything changed.
+              </p>
+
+              <p className="text-xl leading-relaxed text-[var(--tx-2)] italic text-center max-w-2xl mx-auto">
+                through three years of daily practice—journaling, presence,
+                letting go of old patterns—i discovered the unlimited power of
+                the mind.{" "}
+                <span className="font-bold text-[var(--accent)]">
+                  that we can do anything we put our minds to. anything. if we
+                  fully believe in our abilities and have the courage to start
+                  and discipline to stay consistent.
+                </span>
+              </p>
+
+              <p className="text-xl leading-relaxed text-[var(--tx-2)] italic text-center max-w-2xl mx-auto">
+                the journey has been beautiful—and it has been filled with
+                obstacles, frustration, ambiguity, loneliness. i am building the
+                tool i wish existed when i began.{" "}
+                <span className="font-bold text-[var(--accent)]">
+                  a digital space to explore the mind. a tool that recognizes
+                  mind and body are one. where you can capture thoughts, expand
+                  them into knowledge, and cultivate wisdom—all while realizing
+                  your true potential.
+                </span>
+              </p>
+
+              <p className="text-xl leading-relaxed text-[var(--tx-2)] italic text-center max-w-2xl mx-auto">
+                technology, when designed properly, can unlock the mind. ki
+                honors the full scope of human consciousness and leverages AI to
+                help you quantum jump through consistent daily action—releasing
+                old habits, forming new neural pathways, becoming the person you
+                envision.{" "}
+                <span className="font-bold text-[var(--accent)]">
+                  because you already are that person. you just have to start
+                  living as them.
+                </span>
+              </p>
+
+              <p className="text-lg text-[var(--tx-2)] italic text-center max-w-2xl mx-auto mt-8">
+                this website documents ki as it is being built—in real time,
+                with full transparency.
+              </p>
             </div>
             {/* bobbing ki */}
 
@@ -76,91 +150,52 @@ export default function Home() {
                 priority
               />
             </div> */}
-            {/* bobbing ki */}
-            {/* <div className="flex justify-center">
-              <Image
-                src="/icon.png"
-                alt="ki logo"
-                width={50}
-                height={50}
-                className="rounded-full animate-bob"
-                priority
-              />
-            </div> */}
-            {/* bobbing ki */}
-            {/* <div className="flex justify-center">
-              <Image
-                src="/icon.png"
-                alt="ki logo"
-                width={50}
-                height={50}
-                className="rounded-full animate-bob"
-                priority
-              />
-            </div> */}
-            {/* bobbing ki */}
-            {/* <div className="flex justify-center">
-              <Image
-                src="/icon.png"
-                alt="ki logo"
-                width={50}
-                height={50}
-                className="rounded-full animate-bob"
-                priority
-              />
-            </div> */}
-            {/* bobbing ki */}
-            {/* <div className="flex justify-center">
-              <Image
-                src="/icon.png"
-                alt="ki logo"
-                width={50}
-                height={50}
-                className="rounded-full animate-bob"
-                priority
-              />
-            </div> */}
 
-            {/* Horizontal divider */}
-            <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
-
-            {/* Horizontal divider */}
-            <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
-            {/* Key Vision */}
-            {/* <p className="text-lg md:text-xl text-[var(--tx)] text-center font-bold">
-              <span className="text-[var(--accent-2)] italic">
-                unlock the mind
-              </span>{" "}
-              <span className="text-[var(--accent)] italic">
-                return to Self · ~
-              </span>
-            </p> */}
+            {/* bobbing ki */}
+            <div className="flex justify-center">
+              <Image
+                src="/icon.png"
+                alt="ki logo"
+                width={50}
+                height={50}
+                className="rounded-full animate-bob"
+                priority
+              />
+            </div>
 
             {/* what ki is */}
             <div id="what-is-ki" className="space-y-6">
-              <h2 className="text-4xl text-[var(--accent-2)] italic text-center">
-                what is{" "}
-                <span className="font-bold text-[var(--accent)]">
-                  <ClickableWord
-                    word=" ki"
-                    definition="the universal life force that connects us all --- vital energy that flows through all living things --- LOVE"
-                    etymology="From Chinese 'qì' (氣) meaning `air, breath, gas, spirit, vital energy`. The character originally depicted vapor or steam rising, representing the subtle life force that animates all beings. Also written as 'chi' or 'ki' (Japanese pronunciation)."
-                    additionalContext={
-                      <>
-                        <p>
-                          K·I is your core essence—the vital energy at your
-                          center when everything else is stripped away. Just as
-                          qi flows through the body in traditional Chinese
-                          medicine, your K·I is the life force within you that
-                          seeks expression. Through daily practice in the NOW,
-                          K·I cultivates Self-LOVE in the pursuit of LOVE.
-                        </p>
-                      </>
-                    }
-                    accentColor="accent-2"
-                  />
-                </span>{" "}
-              </h2>
+              {/* ki definition */}
+              <div className="max-w-3xl mx-auto space-y-6">
+                <div className="bg-[var(--bg-2)] rounded-lg p-6 md:p-8 shadow-sm space-y-4">
+                  <h2 className="text-4xl text-[var(--accent)] italic text-center">
+                    what is <span className="font-bold">ki</span>?{" "}
+                  </h2>
+                  {/* Definition */}
+                  <div className="space-y-2">
+                    <h4 className="text-xl font-bold text-[var(--accent-2)] italic">
+                      Definition:
+                    </h4>
+                    <p className="text-xl leading-relaxed italic text-[var(--tx)]">
+                      the universal life force that is inherent in all things
+                    </p>
+                  </div>
+
+                  {/* Etymology */}
+                  <div className="space-y-2">
+                    <h4 className="text-xl font-bold text-[var(--accent-2)] italic">
+                      Etymology:
+                    </h4>
+                    <p className="text-xl leading-relaxed text-[var(--tx)]">
+                      From Chinese 'qì' (氣) meaning "air, breath, gas, spirit,
+                      vital energy". The character originally depicted vapor or
+                      steam rising, representing the subtle life force that
+                      animates all beings. Also written as 'chi' or 'ki'
+                      (Japanese pronunciation).
+                    </p>
+                  </div>
+                </div>
+              </div>
 
               <h3 className="text-3xl font-bold text-[var(--tx)] italic text-center">
                 ·{" "}
@@ -193,7 +228,7 @@ export default function Home() {
                   }
                   accentColor="accent"
                 />{" "}
-                <ClickableWord
+                {/* <ClickableWord
                   word="JOURNAL"
                   definition="A daily record; a personal space for capturing thoughts, experiences, emotions, and ideas. A tool for self-reflection and transformation that documents the journey of becoming."
                   etymology="Old French 'jornal' (12th century), derived from Latin 'diurnalis' meaning `daily,` from 'diurnus' (of the day), from 'dies' (day). Originally meant `that which belongs to the day.` The word shares its root with 'journey'—both originally referred to a day's passage, whether through pages or miles."
@@ -215,8 +250,8 @@ export default function Home() {
                     </>
                   }
                   accentColor="accent"
-                />{" "}
-                for the{" "}
+                />{" "} */}
+                for{" "}
                 <ClickableWord
                   word="Self"
                   definition="The core essence of who you are beneath conditioning, ego, and habitual thinking. Your authentic nature stripped of all that is not truly you. The unchanging awareness at your center."
@@ -450,250 +485,274 @@ From Old English 'nu' meaning `now, at present,` from Proto-Germanic '* QWZS  QW
                   <KanbanBoard />
                 </div>
               </div>
-              {/* about the builder section */}
-              <div className="space-y-6">
-                <h3 className="text-2xl font-bold text-[var(--accent-2)] italic text-center">
-                  about the builder
-                </h3>
-                <p className="text-xl leading-relaxed text-[var(--tx-2)] italic text-center max-w-2xl mx-auto">
-                  hi! my name is rachel tomasetti and i am building ki.
-                </p>
-              </div>
             </div>
-            {/* Horizontal divider */}
-            <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
-            {/* Horizontal divider */}
-            <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
-            {/* Horizontal divider */}
-            <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
+            {/* bobbing ki */}
+            <div className="flex justify-center">
+              <Image
+                src="/icon.png"
+                alt="ki logo"
+                width={50}
+                height={50}
+                className="rounded-full animate-bob"
+                priority
+              />
+            </div>
             {/* acknowledgements section */}
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-[var(--accent)] italic text-center">
-                · ~ Acknowledgements ~ ·
-              </h2>
-              <div className="max-w-3xl mx-auto space-y-6">
-                <p className="text-base leading-relaxed italic font-bold text-[var(--accent-2)]">
-                  i would be remiss if i did not take the time to thank all who
-                  have made me who i am today.
-                </p>
-                <p className="text-base leading-relaxed italic font-bold text-[var(--accent-2)]">
-                  for filling my life with{" "}
-                  <span className="font-bold text-[var(--accent)]">
-                    such love, curiousity, beauty, joy, inspiration...
-                  </span>
-                </p>
-                <div className="space-y-2">
-                  <p className="text-base leading-relaxed">
-                    <span className="font-bold text-[var(--accent-2)]">
-                      Thank you to
-                    </span>{" "}
-                    <span className="font-bold text-[var(--accent)]">
-                      Dad, Mom, Hannah, Grace, Danielle, Dune, Ellie,
-                    </span>
+              <div className="bg-[var(--bg-2)] rounded-lg p-6 md:p-8 shadow-sm">
+                <h2 className="text-3xl font-bold text-[var(--accent)] italic text-center">
+                  · ~ Acknowledgements ~ ·
+                </h2>
+                <br />
+                <div className="max-w-3xl mx-auto space-y-6">
+                  <p className="text-base leading-relaxed italic font-bold text-[var(--tx-2)]">
+                    i am beyond grateful for all who have helped me become the
+                    person i am today. i would like to take a moment to thank
+                    you all.
                   </p>
-                  <p className="text-base leading-relaxed text-[var(--tx-2)] italic">
-                    for your endless compassion and kindness to all. for your
-                    strength and courage, your unconditional love, and for
-                    always believing in me. for sharing your curiosities and
-                    inspiring me in your pursuit of Self and your dreams. and
-                    for showing me what it means to love selflessly.
-                  </p>
-                </div>
+                  <div className="bg-[var(--ui)] rounded-lg p-6 md:p-8 shadow-sm space-y-6 max-w-2xl mx-auto">
+                    <div className="space-y-2">
+                      <p className="text-base leading-relaxed">
+                        <span className="font-bold text-[var(--accent-2)]">
+                          Thank you to
+                        </span>{" "}
+                        <span className="font-bold text-[var(--accent)]">
+                          Dad, Mom, Hannah, Grace, Danielle, Dune, Ellie,
+                        </span>
+                      </p>
+                      <p className="text-base leading-relaxed text-[var(--tx-2)] italic">
+                        for your endless compassion and kindness to all. for
+                        your strength and courage, your unconditional love, and
+                        for always believing in me. for sharing your curiosities
+                        and inspiring me in your pursuit of Self and your
+                        dreams. and for showing me what it means to love
+                        selflessly.
+                      </p>
+                    </div>
 
-                <div className="space-y-2">
-                  <p className="text-base leading-relaxed">
-                    <span className="font-bold text-[var(--accent-2)]">
-                      Thank you to
-                    </span>{" "}
-                    <span className="font-bold text-[var(--accent)]">
-                      Anna Skare, Anna Snyders, Ben Paluk, Cadence Dimen, Callie
-                      Mulligan, Caroline Crawford, Chloe Manke, Connor Dunham,
-                      Corinne Kelly, Emory Haines, Grace Liu, Hoodoo Brown BBQ,
-                      Humza Raza, Jamie Narciso, Katherine Weiner, Leah
-                      Castaneda, Luke Barrientos, Maggie Rush, Michael Zvon,
-                      Miranda Bialek, Morgan Krempasky, Nate Joseph, Nick
-                      Agliardo, Owen Gaydos, Prakul Singh, Pramiti Dubey,
-                      Prateek Mishra, Sam Lattanze, Sam Yoon, Sammy Tolani,
-                      Sebastian Baez, Shea Coughlin, Skyler Kahng, Sydney
-                      Giordano, Tasha Riek, Taylor Dutil, Tyler Greene, Zoey
-                      Lee,
-                    </span>
-                  </p>
-                  <p className="text-base leading-relaxed text-[var(--tx-2)] italic">
-                    for your friendship and support. for creating a safe place
-                    for my heart—a space where I could learn, grow, and expand
-                    my curiosities. for your generosity and kindness. for the
-                    endless memories. for DANCE. for sharing your heart and mind
-                    with me and reminding me of the importance of now. for your
-                    light, and for inspiring me every day.
-                  </p>
-                  <p className="text-base leading-relaxed">
-                    <span className="font-bold text-[var(--accent-2)]">
-                      Thank you to
-                    </span>{" "}
-                    <span className="font-bold text-[var(--accent)]">
-                      Dr. Michael Alaia & Team, Professional PT,
-                    </span>
-                  </p>
-                  <p className="text-base leading-relaxed text-[var(--tx-2)] italic">
-                    for helping me heal my body and mind.
-                  </p>
-                </div>
+                    <div className="space-y-2">
+                      <p className="text-base leading-relaxed">
+                        <span className="font-bold text-[var(--accent-2)]">
+                          Thank you to
+                        </span>{" "}
+                        <span className="font-bold text-[var(--accent)]">
+                          Anna Skare, Anna Snyders, Ben Paluk, Cadence Dimen,
+                          Callie Mulligan, Caroline Crawford, Chloe Manke,
+                          Connor Dunham, Corinne Kelly, Emory Haines, Grace Liu,
+                          Hoodoo Brown BBQ, Humza Raza, Jamie Narciso, Katherine
+                          Weiner, Leah Castaneda, Luke Barrientos, Maggie Rush,
+                          Michael Zvon, Miranda Bialek, Morgan Krempasky, Nate
+                          Joseph, Nick Agliardo, Owen Gaydos, Prakul Singh,
+                          Pramiti Dubey, Prateek Mishra, Sam Lattanze, Sam Yoon,
+                          Sammy Tolani, Sebastian Baez, Shea Coughlin, Skyler
+                          Kahng, Sydney Giordano, Tasha Riek, Taylor Dutil,
+                          Tyler Greene, Zoey Lee,
+                        </span>
+                      </p>
+                      <p className="text-base leading-relaxed text-[var(--tx-2)] italic">
+                        for your friendship and support. for creating a safe
+                        place for my heart—a space where I could learn, grow,
+                        and expand my curiosities. for your generosity and
+                        kindness. for the endless memories. for DANCE. for
+                        sharing your heart and mind with me and reminding me of
+                        the importance of now. for your light, and for inspiring
+                        me every day.
+                      </p>
+                      <p className="text-base leading-relaxed">
+                        <span className="font-bold text-[var(--accent-2)]">
+                          Thank you to
+                        </span>{" "}
+                        <span className="font-bold text-[var(--accent)]">
+                          Dr. Michael Alaia & Team, Professional PT,
+                        </span>
+                      </p>
+                      <p className="text-base leading-relaxed text-[var(--tx-2)] italic">
+                        for helping me heal my body and mind.
+                      </p>
+                    </div>
 
-                <div className="space-y-2">
-                  <p className="text-base leading-relaxed">
-                    <span className="font-bold text-[var(--accent-2)]">
-                      Thank you to
-                    </span>{" "}
-                    <span className="font-bold text-[var(--accent)]">
-                      Miami,
-                    </span>
-                  </p>
-                  <p className="text-base leading-relaxed text-[var(--tx-2)] italic">
-                    for creating the perfect environment for me to grow.
-                  </p>
-                </div>
+                    <div className="space-y-2">
+                      <p className="text-base leading-relaxed">
+                        <span className="font-bold text-[var(--accent-2)]">
+                          Thank you to
+                        </span>{" "}
+                        <span className="font-bold text-[var(--accent)]">
+                          Miami,
+                        </span>
+                      </p>
+                      <p className="text-base leading-relaxed text-[var(--tx-2)] italic">
+                        for creating the perfect environment for me to grow.
+                      </p>
+                    </div>
 
-                <div className="space-y-2">
-                  <p className="text-base leading-relaxed">
-                    <span className="font-bold text-[var(--accent-2)]">to</span>{" "}
-                    <span className="font-bold text-[var(--accent)]">
-                      University of Miami | ITD,
-                    </span>
-                  </p>
-                  <p className="text-base leading-relaxed text-[var(--tx-2)] italic">
-                    for helping me explore and expand my curiousities.
-                  </p>
-                  <p className="text-base leading-relaxed pl-8">
-                    <span className="font-bold text-[var(--accent-2)]">to</span>{" "}
-                    <span className="font-bold text-[var(--accent)]">
-                      Devika Milner, Jeffrey Duerk, and Lokesh Ramamoorthi,
-                    </span>
-                  </p>
-                  <p className="text-base leading-relaxed text-[var(--tx-2)] italic pl-8">
-                    who provided continuous guidance and helped me in building
-                    belief in my Self.
-                  </p>
-                  <p className="text-base leading-relaxed pl-8">
-                    <span className="font-bold text-[var(--accent-2)]">to</span>{" "}
-                    <span className="font-bold text-[var(--accent)]">
-                      Roni Kennedy, Anna Munson, Katherine Kuang, Quin McGowan,
-                      Andrew Lentchner, Anthony Santoro, Nico Gallardo, and
-                      Grant Martin,
-                    </span>
-                  </p>
-                  <p className="text-base leading-relaxed text-[var(--tx-2)] italic pl-8">
-                    for your friendship and insights inside and outside of the
-                    classroom.
-                  </p>
-                  <p className="text-base leading-relaxed pl-8">
-                    <span className="font-bold text-[var(--accent-2)]">to</span>{" "}
-                    <span className="font-bold text-[var(--accent)]">
-                      Marcia Weldon and Michelle Destefano,
-                    </span>
-                  </p>
-                  <p className="text-base leading-relaxed text-[var(--tx-2)] italic pl-8">
-                    for being incredible role models and teachers.
-                  </p>
-                  <p className="text-base leading-relaxed pl-8">
-                    <span className="font-bold text-[var(--accent-2)]">to</span>{" "}
-                    <span className="font-bold text-[var(--accent)]">
-                      Eddie Gonzalez,
-                    </span>
-                  </p>
-                  <p className="text-base leading-relaxed text-[var(--tx-2)] italic pl-8">
-                    for igniting my curiousity in beautiful design.
-                  </p>
-                  <p className="text-base leading-relaxed pl-8">
-                    <span className="font-bold text-[var(--accent-2)]">to</span>{" "}
-                    <span className="font-bold text-[var(--accent)]">
-                      Jorge Morejon,
-                    </span>
-                  </p>
-                  <p className="text-base leading-relaxed text-[var(--tx-2)] italic pl-8">
-                    for sharing your story, knowledge, and inspiring me with how
-                    you live.
-                  </p>
-                  <p className="text-base leading-relaxed pl-8">
-                    <span className="font-bold text-[var(--accent-2)]">to</span>{" "}
-                    <span className="font-bold text-[var(--accent)]">
-                      Momma B,
-                    </span>
-                  </p>
-                  <p className="text-base leading-relaxed text-[var(--tx-2)] italic pl-8">
-                    for your kindness and for sharing your love with others.
-                  </p>
-                  <p className="text-base leading-relaxed pl-8">
-                    <span className="font-bold text-[var(--accent-2)]">to</span>{" "}
-                    <span className="font-bold text-[var(--accent)]">
-                      Coconut Grove Run Club, Coffee & Chill Miami, UM Girl
-                      Gains, KTP,
-                    </span>
-                  </p>
-                  <p className="text-base leading-relaxed text-[var(--tx-2)] italic pl-8">
-                    for welcoming me with open arms and building communities
-                    overflowing with energy that played a huge role in my
-                    growth.
-                  </p>
-                </div>
+                    <div className="space-y-2">
+                      <p className="text-base leading-relaxed">
+                        <span className="font-bold text-[var(--accent-2)]">
+                          to
+                        </span>{" "}
+                        <span className="font-bold text-[var(--accent)]">
+                          University of Miami | ITD,
+                        </span>
+                      </p>
+                      <p className="text-base leading-relaxed text-[var(--tx-2)] italic">
+                        for helping me explore and expand my curiousities.
+                      </p>
+                      <p className="text-base leading-relaxed pl-8">
+                        <span className="font-bold text-[var(--accent-2)]">
+                          to
+                        </span>{" "}
+                        <span className="font-bold text-[var(--accent)]">
+                          Devika Milner, Jeffrey Duerk, and Lokesh Ramamoorthi,
+                        </span>
+                      </p>
+                      <p className="text-base leading-relaxed text-[var(--tx-2)] italic pl-8">
+                        who provided continuous guidance and helped me in
+                        building belief in my Self.
+                      </p>
+                      <p className="text-base leading-relaxed pl-8">
+                        <span className="font-bold text-[var(--accent-2)]">
+                          to
+                        </span>{" "}
+                        <span className="font-bold text-[var(--accent)]">
+                          Roni Kennedy, Anna Munson, Katherine Kuang, Quin
+                          McGowan, Andrew Lentchner, Anthony Santoro, Nico
+                          Gallardo, and Grant Martin,
+                        </span>
+                      </p>
+                      <p className="text-base leading-relaxed text-[var(--tx-2)] italic pl-8">
+                        for your friendship and insights inside and outside of
+                        the classroom.
+                      </p>
+                      <p className="text-base leading-relaxed pl-8">
+                        <span className="font-bold text-[var(--accent-2)]">
+                          to
+                        </span>{" "}
+                        <span className="font-bold text-[var(--accent)]">
+                          Marcia Weldon and Michelle Destefano,
+                        </span>
+                      </p>
+                      <p className="text-base leading-relaxed text-[var(--tx-2)] italic pl-8">
+                        for being incredible role models and teachers.
+                      </p>
+                      <p className="text-base leading-relaxed pl-8">
+                        <span className="font-bold text-[var(--accent-2)]">
+                          to
+                        </span>{" "}
+                        <span className="font-bold text-[var(--accent)]">
+                          Eddie Gonzalez,
+                        </span>
+                      </p>
+                      <p className="text-base leading-relaxed text-[var(--tx-2)] italic pl-8">
+                        for igniting my curiousity in beautiful design.
+                      </p>
+                      <p className="text-base leading-relaxed pl-8">
+                        <span className="font-bold text-[var(--accent-2)]">
+                          to
+                        </span>{" "}
+                        <span className="font-bold text-[var(--accent)]">
+                          Jorge Morejon,
+                        </span>
+                      </p>
+                      <p className="text-base leading-relaxed text-[var(--tx-2)] italic pl-8">
+                        for sharing your story, knowledge, and inspiring me with
+                        how you live.
+                      </p>
+                      <p className="text-base leading-relaxed pl-8">
+                        <span className="font-bold text-[var(--accent-2)]">
+                          to
+                        </span>{" "}
+                        <span className="font-bold text-[var(--accent)]">
+                          Momma B,
+                        </span>
+                      </p>
+                      <p className="text-base leading-relaxed text-[var(--tx-2)] italic pl-8">
+                        for your kindness and for sharing your love with others.
+                      </p>
+                      <p className="text-base leading-relaxed pl-8">
+                        <span className="font-bold text-[var(--accent-2)]">
+                          to
+                        </span>{" "}
+                        <span className="font-bold text-[var(--accent)]">
+                          Coconut Grove Run Club, Coffee & Chill Miami, UM Girl
+                          Gains, KTP,
+                        </span>
+                      </p>
+                      <p className="text-base leading-relaxed text-[var(--tx-2)] italic pl-8">
+                        for welcoming me with open arms and building communities
+                        overflowing with energy that played a huge role in my
+                        growth.
+                      </p>
+                    </div>
 
-                <div className="space-y-2">
-                  <p className="text-base leading-relaxed">
-                    <span className="font-bold text-[var(--accent-2)]">
-                      Thank you to
-                    </span>{" "}
-                    <span className="font-bold text-[var(--accent)]">
-                      Andrew Huberman, David Senra, Katherine Anne Porter,
-                      mushrooms, Paulo Coelho, Sara Blakely, Steve Jobs, Wim
-                      Hof, yung pueblo, Y Combinator Team, and all other
-                      teachers,
-                    </span>{" "}
-                  </p>
-                  <p className="text-base leading-relaxed text-[var(--tx-2)] italic">
-                    for the work that you do, whose knowledge and stories
-                    provide clarity, inspiration, and guidance every day in the
-                    building of K · I.
-                  </p>
-                </div>
+                    <div className="space-y-2">
+                      <p className="text-base leading-relaxed">
+                        <span className="font-bold text-[var(--accent-2)]">
+                          Thank you to
+                        </span>{" "}
+                        <span className="font-bold text-[var(--accent)]">
+                          Andrew Huberman, David Senra, Katherine Anne Porter,
+                          mushrooms, Paulo Coelho, Sara Blakely, Steve Jobs, Wim
+                          Hof, yung pueblo, Y Combinator Team, and all other
+                          teachers,
+                        </span>{" "}
+                      </p>
+                      <p className="text-base leading-relaxed text-[var(--tx-2)] italic">
+                        for the work that you do, whose knowledge and stories
+                        provide clarity, inspiration, and guidance every day in
+                        the building of ki.
+                      </p>
+                    </div>
 
-                <div className="space-y-2">
-                  <p className="text-base leading-relaxed italic text-[var(--accent)]">
-                    A special thank you to{" "}
-                    <span className="font-bold">Maddison Miller</span> for
-                    sharing your story and creating space for me to share mine.
-                  </p>
-                </div>
+                    <div className="space-y-2">
+                      <p className="text-base leading-relaxed italic text-[var(--accent)]">
+                        A special thank you to{" "}
+                        <span className="font-bold">Maddison Miller</span> for
+                        sharing your story and creating space for me to share
+                        mine.
+                      </p>
+                    </div>
 
-                <div className="space-y-2">
-                  <p className="text-base leading-relaxed font-bold text-[var(--accent)]">
-                    Thank you to my <span className="italic">Self</span>.
-                  </p>
-                </div>
+                    <div className="space-y-2">
+                      <p className="text-base leading-relaxed font-bold text-[var(--accent)]">
+                        Thank you to my <span className="italic">Self</span>.
+                      </p>
+                    </div>
 
-                <div className="space-y-2">
-                  <p className="text-base leading-relaxed font-bold text-[var(--accent-2)]">
-                    Thank you to all others not named who have touched | will
-                    touch my heart.
-                  </p>
-                  <p className="text-base leading-relaxed font-bold text-[var(--accent-2)]">
-                    Thank you to anyone who is courageously pursuing their
-                    dreams, living and leading with love, sharing and spreading
-                    it.
-                  </p>
-                  <p className="text-base leading-relaxed italic text-[var(--tx-2)]">
-                    i would not be the person i am today without all of you.
-                  </p>
+                    <div className="space-y-2">
+                      <p className="text-base leading-relaxed font-bold text-[var(--accent-2)]">
+                        Thank you to all others not named who have touched |
+                        will touch my heart.
+                      </p>
+                      <p className="text-base leading-relaxed font-bold text-[var(--accent-2)]">
+                        Thank you to anyone who is courageously pursuing their
+                        dreams, living and leading with love, sharing and
+                        spreading it.
+                      </p>
+                      <p className="text-base leading-relaxed italic text-[var(--tx-2)]">
+                        i would not be the person i am today without all of you.
+                      </p>
 
-                  <br />
-                  <p className="text-base leading-relaxed font-semibold text-[var(--accent)]">
-                    you are my hero—this is for you.
-                  </p>
+                      <br />
+                      <p className="text-base leading-relaxed font-semibold text-[var(--accent)]">
+                        you are my hero—this is for you.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Horizontal divider */}
-            <hr className="border-b border-[var(--ui-2)] w-full opacity-70" />
+            {/* bobbing ki */}
+            <div className="flex justify-center">
+              <Image
+                src="/icon.png"
+                alt="ki logo"
+                width={50}
+                height={50}
+                className="rounded-full animate-bob"
+                priority
+              />
+            </div>
 
             <h1 className="text-base mt-4 text-[var(--tx-2)]  text-center italic">
               built with{" "}

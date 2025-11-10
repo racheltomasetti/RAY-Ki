@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 export default function SpinningIconCircle() {
   const [mounted, setMounted] = useState(false);
-  const iconCount = 8;
+  const iconCount = 4;
   const radius = 80; // Distance from center in pixels
   const containerSize = radius * 2 + 40; // radius * 2 + icon size
 
@@ -49,8 +49,8 @@ export default function SpinningIconCircle() {
                 <Image
                   src="/icon.png"
                   alt="ki logo"
-                  width={40}
-                  height={40}
+                  width={50}
+                  height={50}
                   className="rounded-full w-full h-full object-cover"
                 />
               </div>

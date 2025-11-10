@@ -63,13 +63,18 @@ export default function KanbanBoard() {
             href={project.githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 hover:opacity-70 transition-opacity duration-200 cursor-pointer"
+            className="flex items-center gap-2 hover:opacity-70 transition-opacity duration-200 cursor-pointer group relative"
+            title={project.projectDescription}
           >
             <div
-              className={`w-4 h-4 rounded border-2 bg-[var(--${project.colorClass})]`}
+              className="w-4 h-4 rounded border-2"
+              style={{ backgroundColor: `var(--${project.colorClass})` }}
             />
             <span className="text-sm text-[var(--tx)] hover:underline">
               {project.name}
+            </span>
+            <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 bg-[var(--ui-3)] text-[var(--tx)] text-xs rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
+              {project.projectDescription}
             </span>
           </a>
         ))}
