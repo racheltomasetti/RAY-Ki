@@ -88,11 +88,11 @@ export default function Home() {
               </p>
 
               <p className="text-xl leading-relaxed text-[var(--tx-2)] italic text-center max-w-2xl mx-auto">
-                technology, when designed properly, can unlock the mind. ki
-                honors the full scope of human consciousness and leverages AI to
-                help you quantum jump through consistent daily action—releasing
-                old habits, forming new neural pathways, becoming the person you
-                envision.{" "}
+                technology, when designed properly, can help to unlock the mind.
+                ki honors the full scope of human consciousness and leverages AI
+                to help you quantum jump through consistent daily
+                action—releasing old habits, forming new neural pathways,
+                becoming the person you envision.{" "}
                 <span className="font-bold text-[var(--accent)]">
                   because you already are that person. you just have to start
                   living as them.
@@ -187,10 +187,11 @@ export default function Home() {
                       Etymology:
                     </h4>
                     <p className="text-xl leading-relaxed text-[var(--tx)]">
-                      From Chinese 'qì' (氣) meaning "air, breath, gas, spirit,
-                      vital energy". The character originally depicted vapor or
-                      steam rising, representing the subtle life force that
-                      animates all beings. Also written as 'chi' or 'ki'
+                      From Chinese <strong>qi</strong> (氣) meaning &apos;air,
+                      breath, gas, spirit, vital energy&apos;. The character
+                      originally depicted vapor or steam rising, representing
+                      the subtle life force that animates all beings. Also
+                      written as <strong>chi</strong> or <strong>ki</strong>
                       (Japanese pronunciation).
                     </p>
                   </div>
