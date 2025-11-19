@@ -143,12 +143,7 @@ export default function BuilderNote() {
 
           {/* Video Section - Placeholder */}
           <div className="w-full max-w-6xl aspect-video bg-gray-200 rounded-2xl flex items-center justify-center">
-            <p
-              className={`text-xl ${perpetua.className}`}
-              style={{ color: "var(--tx-2)" }}
-            >
-              [Video will go here]
-            </p>
+            <p style={{ color: "var(--tx-2)" }}>[Video will go here]</p>
           </div>
         </div>
       )}

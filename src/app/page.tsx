@@ -13,6 +13,7 @@ import Timeline from "./components/ki/rays-ki/Timeline";
 import { useTheme } from "./contexts/ThemeContext";
 import KiOrigin from "./components/ki/KiOrigin";
 import WhatIsKi from "./components/ki/WhatIsKi";
+import Waitlist from "./components/ki/Waitlist";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -87,9 +88,11 @@ export default function Home() {
                   <HorizontalLine />
                   <br />
                   <KanbanBoard />
+                  <br />
                 </div>
               </div>
             </div>
+            <Waitlist />
 
             {/* Thank you to everyone who has been a part of this journey. */}
             <Acknowledgements />

@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function KiOrigin() {
   return (
-    <div className="bg-[var(--bg-2)] rounded-lg p-6 md:p-8 shadow-sm">
+    <div className="bg-[var(--bg-2)] rounded-lg p-6 md:p-8 shadow-md">
       <h2 className="text-3xl md:text-3xl text-[var(--accent)] mb-6 text-center">
         The Origin of Ki
       </h2>

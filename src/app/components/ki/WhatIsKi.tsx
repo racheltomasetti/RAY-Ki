@@ -8,7 +8,7 @@ export default function WhatIsKi() {
     <div className="space-y-6">
       {/* What Ki Does */}
       <div className="bg-[var(--bg)] rounded-lg p-6 md:p-8 space-y-4 text-center">
-        <h3 className="text-2xl font-bold text-[var(--accent)]">
+        <h3 className="text-3xl font-bold text-[var(--accent)]">
           AI toolkit for the <span className="italic">Self</span>
         </h3>
         <p className="text-xl italic leading-relaxed text-[var(--tx)]">
