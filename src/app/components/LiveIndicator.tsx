@@ -133,7 +133,6 @@ export default function LiveIndicator() {
           relative overflow-hidden rounded-2xl cursor-pointer
           transition-all duration-300 ease-out
           hover:scale-105 hover:shadow-2xl
-          ${perpetua.className}
         `}
         style={{
           background:
