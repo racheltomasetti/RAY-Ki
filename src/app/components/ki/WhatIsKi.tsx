@@ -1,6 +1,7 @@
 import BobbingKi from "./BobbingKi";
 import Image from "next/image";
 import { useTheme } from "@/app/contexts/ThemeContext";
+import HorizontalLine from "../ui/HorizontalLine";
 
 export default function WhatIsKi() {
   const { theme } = useTheme();
@@ -8,63 +9,72 @@ export default function WhatIsKi() {
     <div className="space-y-6">
       {/* What Ki Does */}
       <div className="bg-[var(--bg)] rounded-lg p-6 md:p-8 space-y-4 text-center">
-        <h3 className="text-3xl font-bold text-[var(--accent)]">
-          AI toolkit for the <span className="italic">Self</span>
+        <HorizontalLine />
+        <br />
+        <h3 className="text-3xl text-[var(--accent)]">
+          <span className="font-semibold">AI toolkit</span>{" "}
+          <span className="italic text-[var(--tx)]">for the</span>
         </h3>
-        <p className="text-xl italic leading-relaxed text-[var(--tx)]">
-          Explore, Create, & Connect.
+        <h3 className="text-4xl  italic text-[var(--accent-2)]">
+          ~ • Self • ~
+        </h3>
+        <br />
+        <br />
+        <p className="text-xl font-semibold leading-relaxed text-[var(--tx)] italic">
+          Explore <span className="text-[var(--accent)] italic">|</span> Create{" "}
+          <span className="text-[var(--accent)] italic">|</span> Connect
         </p>
         {/* Flow of Knowledge */}
-        <div className="py-6 flex flex-col items-center justify-center gap-2 text-base text-lg">
-          <span className="text-[var(--tx)]">
+        <div className="py-6 flex flex-col items-center justify-center gap-2 text-2xl">
+          <HorizontalLine />
+          <br />
+          <span className="text-[var(--tx-3)]">
             <span className="italic">Thoughts</span>
           </span>
-          <span className="text-[var(--accent)]">↓</span>
-          <span className="text-[var(--tx)] italic font-semibold">
-            Knowledge
-          </span>
-          <span className="text-[var(--accent)]">↓</span>
-          <span className="text-[var(--tx)] italic font-bold">Wisdom</span>
+          <span className="text-[var(--accent)] text-3xl">↓</span>
+          <span className="text-[var(--tx-2)] italic font ">Knowledge</span>
+          <span className="text-[var(--accent)] text-4xl">↓</span>
+          <span className="text-[var(--tx)] italic font-semibold ">Wisdom</span>
+          <br />
+          <HorizontalLine />
         </div>
-        <p className="text-2xl font-bold italic text-[var(--accent)]">
-          Where mind and body are one.
+        <p className="text-2xl font-semibold italic text-[var(--accent-2)]">
+          Where <span className="text-[var(--tx)] font-bold">mind</span> and{" "}
+          <span className="text-[var(--tx)] font-bold">body</span> are{" "}
+          <span className="text-[var(--tx)] font-bold">one</span>
         </p>
         <br />
-        {/* merge */}
-        <Image
-          src={
-            theme === "light"
-              ? "/assets/merge-light.png"
-              : "/assets/merge-dark.png"
-          }
-          alt="merge"
-          width={500}
-          height={500}
-          className="mx-auto"
-        />
+        <HorizontalLine />
       </div>
       {/* The Goldilocks Zone */}
       <div className="bg-[var(--bg-2)] rounded-lg p-6 md:p-8 shadow-sm space-y-4 text-center">
-        <h3 className="text-3xl text-[var(--accent)]">The Sweet Spot</h3>
+        <h3 className="text-3xl text-[var(--accent)] mb-6">
+          Finding the <span className="italic font-semibold">Sweet Spot</span>
+        </h3>
         <p className="text-lg leading-relaxed text-[var(--tx)]">
           Two of our most powerful tools—
           <span className="italic font-bold">mind</span> and{" "}
           <span className="italic font-bold">technology</span>—hold unlimited
           potential.
         </p>
+        <br />
         <p className="text-lg leading-relaxed text-[var(--tx-2)]">
           But the mind can spiral into{" "}
           <span className="italic">overthinking</span> and{" "}
-          <span className="italic">disconnection</span>. Technology can{" "}
-          <span className="italic">fragment attention </span> and{" "}
+          <span className="italic">disconnection</span>.
+        </p>
+        <p className="text-lg leading-relaxed text-[var(--tx-2)]">
+          Technology can <span className="italic">fragment attention </span> and{" "}
           <span className="italic">replace human agency</span>.
         </p>
-        <p className="text-lg leading-relaxed text-[var(--tx)] italic">
-          Ki lives in the{" "}
-          <span className="font-semibold">
-            Goldilocks zone: utilizing technology{" "}
-            <span className="text-[var(--accent)]"> to become superhuman.</span>
-          </span>{" "}
+        <br />
+        <p className="text-xl leading-relaxed text-[var(--tx)] italic">
+          Ki lives in the Goldilocks zone.
+        </p>
+        <br />
+        <p className="text-2xl leading-relaxed text-[var(--tx)] italic font-semibold">
+          utilizing technology{" "}
+          <span className="text-[var(--accent)]">to become superhuman</span>
         </p>
         <br />
       </div>

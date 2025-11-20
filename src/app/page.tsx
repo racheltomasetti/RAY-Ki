@@ -14,6 +14,7 @@ import { useTheme } from "./contexts/ThemeContext";
 import KiOrigin from "./components/ki/KiOrigin";
 import WhatIsKi from "./components/ki/WhatIsKi";
 import Waitlist from "./components/ki/Waitlist";
+import KiDemo from "./components/ki/KiDemo";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -72,6 +73,8 @@ export default function Home() {
 
             {/* HOW Ki WORKS */}
             <div id="how-it-works" className="space-y-6">
+              {/* KiDEMO goes here */}
+              <KiDemo />
               <Timeline />
             </div>
 
@@ -92,7 +95,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <Waitlist />
 
             {/* Thank you to everyone who has been a part of this journey. */}
             <Acknowledgements />

@@ -13,7 +13,7 @@
       "projectDescription": "where Ki is being shared"
     },
     "ray-Ki": {
-      "name": "ray's Ki",
+      "name": "Ray's Ki",
       "colorClass": "accent-3",
       "linkUrl": "https://www.racheltomasetti.com/",
       "projectDescription": "using Ki to build my digital garden"
@@ -72,13 +72,13 @@
     },
     {
       "id": "5",
-      "title": "MIYAGI ~ YOUR MIND ~",
+      "title": "~ • KI • ~",
       "linkUrl": "racheltomasetti.com",
-      "description": "BUILDING a comprehensive guide that spans the past 3 years, how to intentionally build your mind, fostering unconditional belief in Self. a HOW-TO guide on how to cultivate your mind garden. Based on my own journey, everything I have learned over these years.",
-      "processNotes": "i have been trying and trying to create this. now using Ki to build it out. a work in progress",
+      "description": "everything, all at once. how i built my mind. the belief that anything is possible.",
+      "processNotes": "building in public",
       "project": "ray-Ki",
       "status": "doing",
-      "dateCreated": "2025-10-26T01:05:00",
+      "dateCreated": "2025-11-20T13:18:00",
       "dateCompleted": null
     },
     {
@@ -94,36 +94,14 @@
     },
      {
       "id": "7",
-      "title": "[ ] create demo for launch",
+      "title": "[x] create demo for launch",
       "linkUrl": "https://github.com/racheltomasetti/my-digital-garden",
       "description": "Ki public demo 1",
       "processNotes": "",
       "project": "website",
-      "status": "doing",
+      "status": "done",
       "dateCreated": "2025-11-10T11:44:00",
-      "dateCompleted": null
-    },
-    {
-      "id": "8",
-      "title": "THE ~ ULTIMATE ~ CYCLE GUIDE",
-      "linkUrl": "racheltomasetti.com",
-      "description": "BUILDING a comprehensive guide on how to navigate women's health, understand what is happening in your body, for you are the ceo of your health. your cycle is your superpower.",
-      "processNotes": "",
-      "project": "ray-Ki",
-      "status": "doing",
-      "dateCreated": "2023-06-13T03:05:00",
-      "dateCompleted": null
-    },
-    {
-      "id": "9",
-      "title": "~ THE BUILDER'S BINDER ~",
-      "linkUrl": "racheltomasetti.com",
-      "description": "BUILDING a how-to guide with what i have learned over the years with technology, building, ai. actionable for those curious to create with AI",
-      "processNotes": "",
-      "project": "ray-Ki",
-      "status": "doing",
-      "dateCreated": "2025-09-21T13:04:00",
-      "dateCompleted": null
+      "dateCompleted": "2025-11-20T13:03:00"
     },
     {
       "id": "10",

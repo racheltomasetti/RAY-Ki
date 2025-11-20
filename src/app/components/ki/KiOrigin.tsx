@@ -3,19 +3,20 @@ export default function KiOrigin() {
   return (
     <div className="bg-[var(--bg-2)] rounded-lg p-6 md:p-8 shadow-md">
       <h2 className="text-3xl md:text-3xl text-[var(--accent)] mb-6 text-center">
-        The Origin of Ki
+        <span className="font-semibold">Origin of Ki</span>
       </h2>
       <div className="space-y-4 text-[var(--tx)] text-lg md:text-xl leading-relaxed text-center">
         <p>
-          Ki (氣/気) is an ancient East Asian concept meaning life force, vital
-          energy, breath.
+          <span className="font-bold ">Ki</span> is an ancient East Asian
+          concept meaning life force, vital energy, breath.
         </p>
         <p>
           In traditional practice, cultivating{" "}
-          <span className="italic font-bold">
-            Ki means harmonizing mind, body, and spirit
-          </span>{" "}
-          through presence, breath, and intentional practice.
+          <span className="font-bold">Ki</span> means harmonizing{" "}
+          <span className="font-bold">mind, body,</span> and{" "}
+          <span className="font-bold">spirit</span> through{" "}
+          <span className="italic font-semibold">presence, breath,</span> and{" "}
+          <span className="italic font-semibold">intentional practice</span>.
         </p>
       </div>
       <br />
