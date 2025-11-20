@@ -130,7 +130,6 @@ export default function Timeline({ className = "" }: TimelineProps) {
   return (
     <div className={`w-full ${className}`}>
       <div className="text-center mb-8">
-        <HorizontalLine />
         <br />
         <BobbingKi />
         <br />
@@ -426,10 +425,7 @@ export default function Timeline({ className = "" }: TimelineProps) {
               </div>
             </div>
             <br />
-            <br />
             <BobbingKi />
-            <br />
-            <HorizontalLine />
           </div>
         </>
       )}

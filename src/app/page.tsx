@@ -84,7 +84,7 @@ export default function Home() {
             <div id="about-the-builder" className="space-y-6">
               <div className="space-y-6">
                 <div className="bg-[var(--bg-2)] rounded-lg p-6 md:p-8 shadow-sm">
-                  <p className="text-3xl leading-relaxed text-[var(--accent-2)] opacity-90 font-semibold text-center italic">
+                  <p className="text-3xl leading-relaxed text-[var(--accent)] opacity-90 font-semibold text-center italic">
                     Join us in building
                   </p>
 
