@@ -65,12 +65,12 @@ export default function WhatIsKi() {
         </p>
         <br />
         <p className="text-xl leading-relaxed text-[var(--tx)] italic">
-          Ki lives in the Goldilocks zone.
+          Ki lives in <span className="underline">the Goldilocks zone</span>.
         </p>
         <br />
         <p className="text-2xl leading-relaxed text-[var(--tx)] italic font-semibold">
-          utilizing technology{" "}
-          <span className="text-[var(--accent)]">to become superhuman</span>
+          utilizing technology to{" "}
+          <span className="text-[var(--accent)]">become superhuman</span>
         </p>
         <br />
         <BobbingKi />

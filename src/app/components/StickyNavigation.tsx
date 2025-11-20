@@ -2,9 +2,11 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import BobbingKi from "./ki/BobbingKi";
+import { useModal } from "@/app/contexts/ModalContext";
 
 export default function StickyNavigation() {
   const [activeSection, setActiveSection] = useState<string>("");
+  const { isModalOpen } = useModal();
 
   useEffect(() => {
     const sections = ["what-is-ki", "how-it-works", "about-the-builder"];
@@ -62,6 +64,8 @@ export default function StickyNavigation() {
         : "text-[var(--tx-2)] hover:text-[var(--accent)] font-medium hover:font-bold"
     }`;
   };
+
+  if (isModalOpen) return null;
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-[var(--bg)] border-b border-[var(--ui-2)] backdrop-blur-sm bg-opacity-95">

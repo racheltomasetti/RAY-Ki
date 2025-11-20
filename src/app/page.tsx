@@ -16,6 +16,7 @@ import WhatIsKi from "./components/ki/WhatIsKi";
 import Waitlist from "./components/ki/Waitlist";
 import KiDemo from "./components/ki/KiDemo";
 import Socials from "./components/ki/Socials";
+import UnlockKi from "./components/ki/UnlockKi";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -38,6 +39,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen w-full">
+      {/* Waitlist Modal */}
+      <UnlockKi />
+
       {/* Sticky Navigation */}
       <StickyNavigation />
 
