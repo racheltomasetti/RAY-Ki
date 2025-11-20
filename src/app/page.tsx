@@ -89,7 +89,7 @@ export default function Home() {
                   </p>
 
                   <p className="text-6xl leading-relaxed text-[var(--accent-2)] opacity-90 text-center font-bold">
-                    ~ • Ki • ~
+                    ~ Ki ~
                   </p>
                   <br />
                   <Socials />
@@ -104,6 +104,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <BobbingKi />
 
             {/* Thank you to everyone who has been a part of this journey. */}
             <Acknowledgements />

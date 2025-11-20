@@ -81,7 +81,7 @@ export default function KanbanBoard() {
       {/* Kanban Board */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <KanbanColumn
-          title="to do"
+          title="TO DO"
           cards={todoCards}
           projects={kanbanData.projects}
         />
@@ -91,7 +91,7 @@ export default function KanbanBoard() {
           projects={kanbanData.projects}
         />
         <KanbanColumn
-          title="done"
+          title="DONE"
           cards={doneCards}
           projects={kanbanData.projects}
         />
