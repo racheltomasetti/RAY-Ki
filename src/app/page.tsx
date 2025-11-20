@@ -70,7 +70,7 @@ export default function Home() {
               <KiOrigin />
               <WhatIsKi />
             </div>
-            <BobbingKi />
+            <HorizontalLine />
 
             {/* HOW Ki WORKS */}
             <div id="how-it-works" className="space-y-6">
@@ -85,8 +85,11 @@ export default function Home() {
                 <div className="bg-[var(--bg-2)] rounded-lg p-6 md:p-8 shadow-sm">
                   <HorizontalLine />
                   <br />
-                  <p className="text-xl leading-relaxed text-[var(--tx)] opacity-90 italic text-center">
-                    · here you will find the living build documentation for Ki ·
+                  <p className="text-2xl leading-relaxed text-[var(--tx)] opacity-90 italic text-center">
+                    Join us in building
+                  </p>
+                  <p className="text-4xl leading-relaxed text-[var(--tx)] opacity-90 font-semibold text-center">
+                    ~ Ki ~
                   </p>
                   <br />
                   <HorizontalLine />

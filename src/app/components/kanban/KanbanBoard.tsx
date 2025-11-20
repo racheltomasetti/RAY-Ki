@@ -54,9 +54,7 @@ export default function KanbanBoard() {
     <div className="w-full space-y-6">
       {/* Color Key */}
       <div className="flex flex-wrap items-center justify-center gap-4 pb-4 border-b border-[var(--ui-2)]">
-        <span className="text-sm font-semibold text-[var(--tx-2)] italic">
-          Projects:
-        </span>
+        <span className="text-sm font-semibold text-[var(--tx-2)] italic"></span>
         {Object.entries(kanbanData.projects).map(([key, project]) => (
           <a
             key={key}

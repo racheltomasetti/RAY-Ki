@@ -6,17 +6,17 @@ export default function Acknowledgements() {
       {/* acknowledgements section */}
       <div className="space-y-6">
         <div className="bg-[var(--bg-2)] rounded-lg p-6 md:p-8 shadow-sm">
-          <h2 className="text-3xl text-[var(--accent)] text-center italic">
+          <h2 className="text-3xl text-[var(--accent)] text-center font-semibold">
             Acknowledgements
           </h2>
           <br />
           <div className="max-w-3xl mx-auto space-y-6">
             <p className="text-base leading-relaxed italic text-[var(--tx)]">
-              i am beyond grateful for those who have helped me become the
-              person i am today.
+              i am beyond grateful for all who have helped me become the person
+              i am today.
             </p>
             <p className="text-base leading-relaxed italic text-[var(--tx)]">
-              i would like to take a moment to thank you all.
+              i would like to take a moment to thank you all:
             </p>
             <div className="bg-[var(--ui)] rounded-lg p-6 md:p-8 shadow-sm space-y-6 max-w-2xl mx-auto">
               <div className="space-y-2">
@@ -45,14 +45,14 @@ export default function Acknowledgements() {
                   <span className="italic text-[var(--accent)]">
                     Anna Skare, Anna Snyders, Ben Paluk, Cadence Dimen, Callie
                     Mulligan, Caroline Crawford, Chloe Manke, Connor Dunham,
-                    Corinne Kelly, Emory Haines, Faith Arnold, Grace Liu, Hoodoo
-                    Brown BBQ Family, Humza Raza, Jamie Narciso, Katherine
-                    Weiner, Leah Castañeda, Luke Barrientos, Maggie Rush,
-                    Michael Zvon, Miranda Bialek, Morgan Krempasky, Nate Joseph,
-                    Nick Agliardo, Owen Gaydos, Prakul Singh, Pramiti Dubey,
-                    Prateek Mishra, Sam Lattanze, Sam Yoon, Sammy Tolani, Sean
-                    Holmes, Sebastian Baez, Shea Coughlin, Skyler Kahng, Sydney
-                    Giordano, Tasha Riek, Taylor Dutil, Tyler Greene, Zoey Lee,
+                    Corinne Kelly, Emory Haines, Faith Arnold, Grace Liu, Humza
+                    Raza, Jamie Narciso, Katherine Weiner, Leah Castañeda, Luke
+                    Barrientos, Maggie Rush, Michael Zvon, Miranda Bialek,
+                    Morgan Krempasky, Nate Joseph, Nick Agliardo, Owen Gaydos,
+                    Prakul Singh, Pramiti Dubey, Prateek Mishra, Sam Lattanze,
+                    Sam Svendsen, Sam Yoon, Sammy Tolani, Sean Holmes, Sebastian
+                    Baez, Shea Coughlin, Skyler Kahng, Sydney Giordano, Tasha
+                    Riek, Taylor Dutil, Tyler Greene, Zoey Lee,
                   </span>
                 </p>
                 <p className="text-base leading-relaxed text-[var(--tx-2)] italic">
@@ -145,29 +145,32 @@ export default function Acknowledgements() {
                   </span>
                 </p>
                 <p className="text-base leading-relaxed text-[var(--tx-2)] italic pl-8">
-                  for sharing your story, knowledge, and inspiring me with how
-                  you live.
+                  for your story and for inspiring me with how you move.
                 </p>
                 <p className="text-base leading-relaxed pl-8">
                   <span className="font-bold text-[var(--accent-2)]">to</span>{" "}
                   <span className="italic text-[var(--accent)]">Momma B,</span>
                 </p>
                 <p className="text-base leading-relaxed text-[var(--tx-2)] italic pl-8">
-                  for your kindness and for sharing your magic with others.
-                </p>
-                <p className="text-base leading-relaxed pl-8">
-                  <span className="font-bold text-[var(--accent-2)]">to</span>{" "}
-                  <span className="italic text-[var(--accent)]">
-                    Coconut Grove Run Club, Coffee & Chill Miami, UM Girl Gains,
-                    Kappa Theta Pi,
-                  </span>
-                </p>
-                <p className="text-base leading-relaxed text-[var(--tx-2)] italic pl-8">
-                  for welcoming me with open arms and building communities
-                  overflowing with energy that played a huge role in my growth.
+                  for sharing your love | magic.
                 </p>
               </div>
 
+              <div className="space-y-2">
+                <p className="text-base leading-relaxed">
+                  <span className="font-bold text-[var(--accent-2)]">
+                    Thank you to
+                  </span>{" "}
+                  <span className="italic text-[var(--accent)]">
+                    Coconut Grove Run Club, Coffee & Chill Miami, Coffee & Chill
+                    NYC, UM Girl Gains, KTP, Hoodoo Brown BBQ, and all other
+                    communities,
+                  </span>
+                </p>
+                <p className="text-base leading-relaxed text-[var(--tx-2)] italic pl-4">
+                  for welcoming me with open arms and filling me with energy.
+                </p>
+              </div>
               <div className="space-y-2">
                 <p className="text-base leading-relaxed">
                   <span className="font-bold text-[var(--accent-2)]">

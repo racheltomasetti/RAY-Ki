@@ -3,26 +3,26 @@
     "builder-ki": {
       "name": "builder-ki",
       "colorClass": "accent",
-      "linkUrl": "https://github.com/racheltomasetti/builder-ki",
-      "projectDescription": "where Ki is being explored & built"
+      "linkUrl": "https://github.com/racheltomasetti/builder-ki/blob/main/README.md",
+      "projectDescription": "exploring Ki"
     },
     "website": {
       "name": "my-digital-garden",
       "colorClass": "accent-2",
-      "linkUrl": "https://github.com/racheltomasetti/my-digital-garden",
-      "projectDescription": "where Ki is being shared"
+      "linkUrl": "https://github.com/racheltomasetti/my-digital-garden/blob/main/README.md",
+      "projectDescription": "the story of Ki"
     },
     "ray-Ki": {
       "name": "Ray's Ki",
       "colorClass": "accent-3",
       "linkUrl": "https://www.racheltomasetti.com/",
-      "projectDescription": "using Ki to build my digital garden"
+      "projectDescription": "building my Ki"
     },
     "Ki": {
       "name": "Ki",
       "colorClass": "accent-4",
       "linkUrl": "",
-      "projectDescription": "Ki for everyone"
+      "projectDescription": "building Ki"
     }
   },
   "cards": [
@@ -74,8 +74,8 @@
       "id": "5",
       "title": "~ • KI • ~",
       "linkUrl": "racheltomasetti.com",
-      "description": "everything, all at once. how i built my mind. the belief that anything is possible.",
-      "processNotes": "building in public",
+      "description": "how i built my mind",
+      "processNotes": "telling the story i have been struggling to share for years",
       "project": "ray-Ki",
       "status": "doing",
       "dateCreated": "2025-11-20T13:18:00",
