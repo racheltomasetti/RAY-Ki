@@ -86,7 +86,7 @@ export default function SiteNavModal({ isOpen, onClose }: SiteNavModalProps) {
                 </p>
               </div>
               <div className="bg-[var(--ui-2)] rounded-lg p-3 sm:p-4 space-y-1.5 sm:space-y-2">
-                <p className="font-semibold text-sm sm:text-base text-[var(--accent-2)] text-center">
+                <p className="font-semibold text-sm sm:text-base text-[var(--accent)] text-center">
                   Keyboard Shortcuts
                 </p>
                 <p className="text-sm sm:text-base text-[var(--tx-2)] text-center">
