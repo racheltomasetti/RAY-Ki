@@ -5,7 +5,8 @@ import { X } from "lucide-react";
 import Link from "next/link";
 import { useModal } from "@/app/contexts/ModalContext";
 
-const JOTFORM_URL = "https://form.jotform.com/253228041809152";
+const WAITLIST_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSdJq1LRqrQNw7W9mLErJ1EQ86mYHq6iWw5Q3aCcNY_5O5qcDg/viewform?usp=dialog";
 
 export default function UnlockKi() {
   const [showModal, setShowModal] = useState(false);
@@ -75,14 +76,13 @@ export default function UnlockKi() {
             </p>
             <br />
             <Link
-              href={JOTFORM_URL}
+              href={WAITLIST_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-6 py-3 rounded-lg bg-[var(--accent)] hover:bg-[var(--accent)]/90 text-white font-semibold transition-colors italic"
+              className="inline-block px-6 py-3 rounded-lg bg-[var(--accent)] hover:bg-[var(--accent)]/90 text-white font-semibold transition-colors italic hover:cursor-pointer"
             >
               Join the Waitlist
             </Link>
-            <br />
           </div>
         </div>
       </div>
