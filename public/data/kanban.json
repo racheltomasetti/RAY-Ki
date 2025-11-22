@@ -71,17 +71,6 @@
       "dateCompleted": "2025-11-15T15:45:00"
     },
     {
-      "id": "5",
-      "title": "~ • KI • ~",
-      "linkUrl": "racheltomasetti.com",
-      "description": "how i built my mind",
-      "processNotes": "writing the story i have been trying to tell for years but could never articulate",
-      "project": "ray-Ki",
-      "status": "doing",
-      "dateCreated": "2025-11-20T13:18:00",
-      "dateCompleted": null
-    },
-    {
       "id": "6",
       "title": "[x] build out site for launch",
       "linkUrl": "https://github.com/racheltomasetti/my-digital-garden",
@@ -121,7 +110,7 @@
       "description": "release the first beta version of Ki",
       "processNotes": "",
       "project": "Ki",
-      "status": "todo",
+      "status": "doing",
       "dateCreated": "2025-11-18T14:07:00",
       "dateCompleted": null
     }
