@@ -109,10 +109,7 @@ export default function StickyNavigation() {
             </div>
 
             {/* Logo in the center */}
-            <button
-              onClick={() => scrollToSection("how-it-works")}
-              className="cursor-pointer"
-            >
+            <button onClick={scrollToBottom} className="cursor-pointer">
               <BobbingKi />
             </button>
 

@@ -68,7 +68,7 @@ export default function SiteNavModal({ isOpen, onClose }: SiteNavModalProps) {
                   <span className="inline-flex align-middle scale-75 sm:scale-100">
                     <BobbingKi />
                   </span>{" "}
-                  to quickly navigate between sections.
+                  to quickly navigate website.
                 </p>
               </div>
               <div className="bg-[var(--ui-2)] rounded-lg p-3 sm:p-4 space-y-1.5 sm:space-y-2">
@@ -80,7 +80,7 @@ export default function SiteNavModal({ isOpen, onClose }: SiteNavModalProps) {
                   <span className="inline-flex align-middle scale-75 sm:scale-100">
                     <SpinningKi />
                   </span>{" "}
-                  to explore more about Ki.
+                  for more.
                 </p>
               </div>
               <div className="bg-[var(--ui-2)] rounded-lg p-3 sm:p-4 space-y-1.5 sm:space-y-2">

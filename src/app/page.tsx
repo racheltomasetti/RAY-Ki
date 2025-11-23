@@ -72,8 +72,8 @@ export default function Home() {
                       : "/assets/ki-dark.png"
                   }
                   alt="Ki Logo"
-                  width={theme === "light" ? 75 : 75}
-                  height={theme === "light" ? 75 : 75}
+                  width={theme === "light" ? 200 : 200}
+                  height={theme === "light" ? 200 : 200}
                   priority
                 />
               </div>
@@ -97,12 +97,12 @@ export default function Home() {
             {/* BUILDING Ki */}
             <div id="about-the-builder" className="space-y-6">
               <div className="space-y-6">
-                <div className="bg-[var(--bg)] rounded-lg p-6 md:p-8 shadow-sm">
+                <div className="bg-[var(--bg-2)] rounded-lg p-6 md:p-8 shadow-sm">
                   <HorizontalLine />
                   <br />
                   <br />
                   {/* Ki logo centered */}
-                  <div className="flex items-center justify-center animate-rotate-in mt-3 mb-6">
+                  <div className="flex items-center justify-center animate-rotate-in">
                     <Image
                       src={
                         theme === "light"
@@ -110,8 +110,8 @@ export default function Home() {
                           : "/assets/ki-dark.png"
                       }
                       alt="Ki Logo"
-                      width={theme === "light" ? 75 : 75}
-                      height={theme === "light" ? 75 : 75}
+                      width={theme === "light" ? 200 : 200}
+                      height={theme === "light" ? 200 : 200}
                       priority
                     />
                   </div>
@@ -130,6 +130,9 @@ export default function Home() {
                       Join the Community
                     </Link>
                   </div>
+                  <p className="text-lg text-[var(--tx)] italic text-center mt-6">
+                    to unlock your Ki.
+                  </p>
                   <br />
                   <br />
                   <Socials />
@@ -137,14 +140,12 @@ export default function Home() {
               </div>
             </div>
             <br />
-
-            {/* Thank you to everyone who has been a part of this journey. */}
-            <Acknowledgements />
+            <br />
 
             <HorizontalLine />
-
-            <div className="flex items-center justify-center gap-2 mt-4">
-              <span className="text-base italic text-[var(--tx-2)] leading-none">
+            <Acknowledgements />
+            <div className="flex items-center justify-center">
+              <span className="text-base italic text-[var(--tx)] leading-none">
                 built with
               </span>
               <div className="flex items-center">
@@ -155,8 +156,8 @@ export default function Home() {
                       : "/assets/ki-dark.png"
                   }
                   alt="Ki"
-                  width={18}
-                  height={18}
+                  width={40}
+                  height={40}
                 />
               </div>
             </div>

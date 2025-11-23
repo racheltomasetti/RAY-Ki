@@ -7,8 +7,7 @@ export default function Acknowledgements() {
       {/* acknowledgements section */}
       <div className="space-y-6">
         <div className="bg-[var(--bg)] rounded-lg p-6 md:p-8">
-          <br />
-          <h2 className="text-2xl text-[var(--accent)] text-center font-semibold">
+          <h2 className="text-2xl italic text-[var(--accent)] text-center font-semibold">
             Acknowledgements
           </h2>
           <br />
@@ -20,7 +19,7 @@ export default function Acknowledgements() {
             <p className="text-sm leading-relaxed italic text-[var(--tx)]">
               I would like to take a moment to thank you all:
             </p>
-            <div className="bg-[var(--ui)] rounded-lg p-6 md:p-8 shadow-sm space-y-6 max-w-2xl mx-auto">
+            <div className="bg-[var(--bg)] rounded-lg p-6 md:p-8 space-y-6 max-w-2xl mx-auto">
               <div className="space-y-2">
                 <p className="text-sm leading-relaxed">
                   <span className="font-bold text-[var(--accent-2)]">
@@ -241,6 +240,7 @@ export default function Acknowledgements() {
             </div>
           </div>
         </div>
+        <HorizontalLine />
       </div>
     </>
   );

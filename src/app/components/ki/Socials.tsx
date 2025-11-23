@@ -7,15 +7,10 @@ import SpinningKi from "./SpinningKi";
 
 export default function Socials() {
   return (
-    <div className="flex flex-col flex-wrap items-center justify-center gap-6">
+    <div className="flex flex-row flex-wrap items-center justify-center gap-3">
       <HorizontalLine />
-      <br />
       {/* Unlock Ki */}
-      <p className="text-lg text-[var(--tx)] italic">
-        It&apos;s time to unlock Ki.
-      </p>
-
-      {/* next */}
+      <p className="text-lg text-[var(--tx-2)] italic">Then click </p>
       <Link
         href="https://www.unlock-ki.com/"
         target="_blank"
@@ -25,6 +20,9 @@ export default function Socials() {
       >
         <SpinningKi />
       </Link>
+      <p className="text-lg text-[var(--tx-2)] italic">to access your Ki.</p>
+      <br />
+      <HorizontalLine />
     </div>
   );
 }
