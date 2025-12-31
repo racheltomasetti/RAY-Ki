@@ -442,7 +442,6 @@ export default function Timeline({ className = "" }: TimelineProps) {
       {/* Garden Entry Modal */}
       <GardenEntryModal
         isOpen={isGardenModalOpen}
-        onClose={() => setIsGardenModalOpen(false)}
       />
     </div>
   );
