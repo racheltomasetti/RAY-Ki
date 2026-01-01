@@ -67,28 +67,12 @@ export default function MissionModal({ isOpen, onClose }: MissionModalProps) {
           </h2>
 
           <p
-            className={`text-3xl leading-relaxed italic text-center ${poppins.className}`}
+            className={`text-3xl leading-relaxed font-semibold text-center ${poppins.className}`}
             style={{ color: "var(--tx)" }}
           >
-            unlock the mind 
+          <em>unlock the mind</em>
           </p>
         </div>
-
-        {/* Close Button */}
-        {/* <button
-          onClick={onClose}
-          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-2xl transition-colors"
-          style={{ color: "var(--tx-2)" }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.color = "var(--tx)";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.color = "var(--tx-2)";
-          }}
-          aria-label="Close modal"
-        >
-          ×
-        </button> */}
       </div>
     </div>
   );
