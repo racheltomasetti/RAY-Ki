@@ -1,0 +1,14 @@
+{
+  "deadlines": [
+    {
+      "id": "deadline-0",
+      "date": "2026-01-11",
+      "goals": [
+        { "text": "<= 11 users in ki", "status": "pending" },
+        { "text": "Launched the website", "status": "pending" },
+        { "text": "Original ambitious feature", "status": "pending" }
+      ],
+      "status": "active"
+    }
+  ]
+}

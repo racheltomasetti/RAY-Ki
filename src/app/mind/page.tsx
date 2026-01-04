@@ -32,7 +32,7 @@ export default function MindPage() {
           animateOn="view"
           sequential={true}
           revealDirection="start"
-          className="italic text-xl mb-8 font-medium"
+          className="italic text-lg mb-8 font-medium"
           encryptedClassName="italic text-xl mb-8 font-medium"
           style={{ color: "var(--text) text-xl", display: "block" }}
         />
