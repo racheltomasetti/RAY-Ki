@@ -26,20 +26,6 @@ export default function MindPage() {
         }
       `}</style>
       <div className="min-h-screen w-full flex flex-col items-center justify-center" style={{ backgroundColor: "var(--bg)" }}>
-        <div style={{ width: "100%", overflow: "visible", display: "flex", justifyContent: "center" }}>
-          <DecryptedText
-            text="welcome to my mind"
-            speed={80}
-            animateOn="view"
-            sequential={true}
-            revealDirection="start"
-            className="italic text-lg mb-8 font-medium"
-            encryptedClassName="italic text-xl mb-8 font-medium"
-            parentClassName="block"
-            style={{ color: "var(--text)", overflow: "visible", width: "fit-content", minWidth: "fit-content" }}
-          />
-        </div>
-        <hr className="w-3/4 mt-8 mb-8" style={{ borderColor: "var(--text)", opacity: 0.3 }} />
         <div className="relative">
           <Image
             src="/assets/red-flowers.png"
@@ -61,10 +47,21 @@ export default function MindPage() {
             />
           </div>
         </div>
-        <hr className="w-3/4 mt-8" style={{ borderColor: "var(--text)", opacity: 0.3 }} />
-        {/* introduction */}
-        <p className="italic text-md mt-8 text-center max-w-2xl px-4" style={{ color: "var(--text)" }}>my name is rachel tomasetti (ray) <br /> and i am obsessed with the <b>mind.</b></p>
-        <p className="italic text-md mt-8" style={{ color: "var(--text)" }}>now let&apos;s have some fun, shall we?</p>
+        <hr className="w-3/4 mt-8 mb-8" style={{ borderColor: "var(--text)", opacity: 0.3 }} />
+        <div style={{ width: "100%", overflow: "visible", display: "flex", justifyContent: "center" }}>
+          <DecryptedText
+            text="welcome to my mind"
+            speed={80}
+            animateOn="view"
+            sequential={true}
+            revealDirection="start"
+            className="italic text-lg mb-8 font-medium"
+            encryptedClassName="italic text-xl mb-8 font-medium"
+            parentClassName="block"
+            style={{ color: "var(--text)", overflow: "visible", width: "fit-content", minWidth: "fit-content" }}
+          />
+        </div>
+        
  
       </div>
     </>
