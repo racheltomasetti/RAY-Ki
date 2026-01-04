@@ -26,16 +26,19 @@ export default function MindPage() {
         }
       `}</style>
       <div className="min-h-screen w-full flex flex-col items-center justify-center" style={{ backgroundColor: "var(--bg)" }}>
-        <DecryptedText
-          text="welcome to my mind"
-          speed={80}
-          animateOn="view"
-          sequential={true}
-          revealDirection="start"
-          className="italic text-lg mb-8 font-medium"
-          encryptedClassName="italic text-xl mb-8 font-medium"
-          style={{ color: "var(--text) text-xl", display: "block" }}
-        />
+        <div style={{ width: "100%", overflow: "visible", display: "flex", justifyContent: "center" }}>
+          <DecryptedText
+            text="welcome to my mind"
+            speed={80}
+            animateOn="view"
+            sequential={true}
+            revealDirection="start"
+            className="italic text-lg mb-8 font-medium"
+            encryptedClassName="italic text-xl mb-8 font-medium"
+            parentClassName="block"
+            style={{ color: "var(--text)", overflow: "visible", width: "fit-content", minWidth: "fit-content" }}
+          />
+        </div>
         <hr className="w-3/4 mt-8 mb-8" style={{ borderColor: "var(--text)", opacity: 0.3 }} />
         <div className="relative">
           <Image

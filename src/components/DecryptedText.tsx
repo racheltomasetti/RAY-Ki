@@ -160,8 +160,8 @@ export default function DecryptedText({
               setHasAnimated(true);
             }, delay);
           } else {
-            setIsHovering(true);
-            setHasAnimated(true);
+          setIsHovering(true);
+          setHasAnimated(true);
           }
         }
       });
@@ -202,12 +202,12 @@ export default function DecryptedText({
     >
       <span className="sr-only">{displayText}</span>
 
-      <span aria-hidden="true">
+      <span aria-hidden="true" style={{ display: 'inline', letterSpacing: 'normal', wordSpacing: 'normal' }}>
         {displayText.split('').map((char, index) => {
           const isRevealedOrDone = revealedIndices.has(index) || !isScrambling || !isHovering;
 
           return (
-            <span key={index} className={isRevealedOrDone ? className : encryptedClassName}>
+            <span key={index} className={isRevealedOrDone ? className : encryptedClassName} style={{ display: 'inline' }}>
               {char}
             </span>
           );
