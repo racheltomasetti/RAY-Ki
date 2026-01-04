@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { poppins } from "@/app/fonts";
+import { perpetua } from "@/app/fonts";
 
 export default function EnterButton() {
   const router = useRouter();
@@ -13,7 +13,7 @@ export default function EnterButton() {
   return (
     <button
       onClick={handleEnterMind}
-      className={`fixed left-1/2 bottom-[20%] px-8 py-3 rounded-lg font-semibold text-lg transition-all flex items-center gap-2 z-40 ${poppins.className}`}
+      className={`fixed left-1/2 bottom-[20%] px-8 py-3 rounded-lg font-semibold text-xl transition-all flex items-center gap-2 z-40 ${perpetua.className}`}
       style={{
         backgroundColor: "var(--accent)",
         color: "white",

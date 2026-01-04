@@ -1,7 +1,6 @@
 "use client";
 
 import { useTheme } from "@/app/contexts/ThemeContext";
-import { poppins } from "@/app/fonts";
 import Image from "next/image";
 import iconImage from "@/app/icon.png";
 import DecryptedText from "@/components/DecryptedText";
@@ -55,7 +54,7 @@ export default function MindPage() {
             animateOn="view"
             sequential={true}
             revealDirection="start"
-            className="italic text-lg mb-8 font-medium"
+            className="italic text-xl mb-8 font-medium"
             encryptedClassName="italic text-xl mb-8 font-medium"
             parentClassName="block"
             style={{ color: "var(--text)", overflow: "visible", width: "fit-content", minWidth: "fit-content" }}

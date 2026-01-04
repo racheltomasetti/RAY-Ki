@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { poppins } from "@/app/fonts";
+import { perpetua } from "@/app/fonts";
 
 interface MissionModalProps {
   isOpen: boolean;
@@ -48,11 +48,11 @@ export default function MissionModal({ isOpen, onClose }: MissionModalProps) {
     >
       {/* Modal Container */}
       <div
-        className="relative w-11/12 max-w-md rounded-lg shadow-2xl animate-scale-in flex items-center justify-center"
+        className="relative w-[300px] rounded-lg shadow-2xl animate-scale-in flex items-center justify-center"
         style={{
           backgroundColor: "var(--bg)",
           border: "2px solid var(--ui-2)",
-          minHeight: "200px",
+          minHeight: "100px",
           padding: "2rem 1.5rem",
         }}
         onClick={(e) => e.stopPropagation()}
@@ -60,14 +60,14 @@ export default function MissionModal({ isOpen, onClose }: MissionModalProps) {
         {/* Modal Content */}
         <div className="flex flex-col items-center justify-center space-y-4" style={{ color: "var(--tx)" }}>
           <h2
-            className={`text-3xl font-bold text-center ${poppins.className}`}
+            className={`text-4xl font-bold text-center ${perpetua.className}`}
             style={{ color: "var(--accent)" }}
           >
             CORE MISSION
           </h2>
 
           <p
-            className={`text-3xl leading-relaxed font-semibold text-center ${poppins.className}`}
+            className={`text-4xl leading-relaxed font-semibold text-center ${perpetua.className}`}
             style={{ color: "var(--tx)" }}
           >
           <em>unlock the mind</em>
