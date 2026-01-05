@@ -79,7 +79,7 @@ export default function MindPage() {
               color: "#DAD8CE"
             }}
           >
-            My 12 Favorite Problems
+            12 Favorite Problems
           </a>
         </div>
 
