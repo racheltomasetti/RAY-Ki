@@ -20,6 +20,12 @@ html.dark {
   --accent-2: #24837b;
   --accent-3: #d0a215;
   --accent-4: #a02f6f;
+  /* Color palette */
+  --terra: #9e2a2b;
+  --ray: #efcb68;
+  --pacific: #58a4b0;
+  --sage: #54783fff;
+  --dawn: #e0bad7;
 
   /* Color palette - 600 series (darker shades) for dark theme */
   --re: #af3029; /* Red */

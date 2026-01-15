@@ -25,14 +25,7 @@ export default function MindPage() {
         }
       `}</style>
       <div className="min-h-screen w-full flex flex-col items-center justify-start pt-8 md:pt-12" style={{ backgroundColor: "var(--bg)" }}>
-        <div className="relative">
-          <Image
-            src="/assets/red-flowers.png"
-            alt="Red flowers"
-            width={88}
-            height={88}
-            className="object-contain"
-          />
+        <div className="relative mb-12">
           <div 
             className="absolute left-1/2 top-1/2 bobbing" 
             style={{ width: `${iconSize}px`, height: `${iconSize}px` }}
