@@ -1,68 +1,123 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useTheme } from "@/app/contexts/ThemeContext";
 import Image from "next/image";
-import iconImage from "@/app/icon.png";
-import DecryptedText from "@/app/components/DecryptedText";
 
 export default function MindPage() {
   const { theme } = useTheme();
-  const iconSize = 75;
+  const kiImage =
+    theme === "dark" ? "/assets/ki-dark.png" : "/assets/ki-light.png";
+  const logoImage =
+    theme === "dark" ? "/assets/logo-light.png" : "/assets/logo-dark.png";
+  const [isSpinning, setIsSpinning] = useState(false);
+  const [spinDuration, setSpinDuration] = useState(6);
+  const [showLogo, setShowLogo] = useState(false);
+
+  useEffect(() => {
+    if (!isSpinning) return;
+
+    const startTime = performance.now();
+    const minDuration = 0.15;
+    const maxDuration = 6;
+    const rampDuration = 6000;
+
+    let frameId = 0;
+
+    const tick = (time: number) => {
+      const elapsed = time - startTime;
+      const progress = Math.min(elapsed / rampDuration, 1);
+      const nextDuration =
+        maxDuration - (maxDuration - minDuration) * progress * progress;
+      setSpinDuration(nextDuration);
+
+      frameId = requestAnimationFrame(tick);
+    };
+
+    frameId = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frameId);
+  }, [isSpinning]);
+
+  useEffect(() => {
+    if (!isSpinning) return;
+
+    const timer = window.setTimeout(() => {
+      setShowLogo(true);
+    }, 6500);
+
+    return () => window.clearTimeout(timer);
+  }, [isSpinning]);
 
   return (
     <>
       <style jsx>{`
-        @keyframes bob {
-          0%, 100% {
-            transform: translate(-50%, -20%) translateY(0px);
+        @keyframes spin {
+          from {
+            transform: rotate(0deg);
           }
-          50% {
-            transform: translate(-50%, -20%) translateY(-8px);
+          to {
+            transform: rotate(360deg);
           }
         }
-        .bobbing {
-          animation: bob 4s ease-in-out infinite;
+        @keyframes growIn {
+          from {
+            transform: translate(-50%, -50%) scale(0);
+            opacity: 0;
+          }
+          to {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+          }
         }
       `}</style>
-      <div className="min-h-screen w-full flex flex-col items-center justify-start pt-8 md:pt-12" style={{ backgroundColor: "var(--bg)" }}>
-        <div className="relative mb-12">
-          <div 
-            className="absolute left-1/2 top-1/2 bobbing" 
-            style={{ width: `${iconSize}px`, height: `${iconSize}px` }}
+      <div
+        className="min-h-screen w-full flex flex-col items-center justify-center"
+        style={{ backgroundColor: "var(--bg)" }}
+      >
+        <div className="relative flex items-center justify-center">
+          <button
+            type="button"
+            onClick={() => setIsSpinning(true)}
+            aria-label="Spin Ki"
+            className="cursor-pointer"
+            style={{ background: "transparent", border: "none", padding: 0 }}
           >
             <Image
-              src={iconImage}
-              alt="Icon"
-              width={iconSize}
-              height={iconSize}
-              className="object-contain opacity-85 w-full h-full"
+              src={kiImage}
+              alt="Ki"
+              width={220}
+              height={220}
+              className="object-contain"
+              priority
+              style={
+                isSpinning
+                  ? {
+                      animationName: "spin",
+                      animationDuration: `${spinDuration}s`,
+                      animationTimingFunction: "linear",
+                      animationIterationCount: "infinite",
+                    }
+                  : undefined
+              }
             />
-          </div>
+          </button>
+          {showLogo && (
+            <Image
+              src={logoImage}
+              alt="Logo"
+              width={130}
+              height={130}
+              className="object-contain pointer-events-none"
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                animation: "growIn 3.6s ease-out forwards",
+              }}
+            />
+          )}
         </div>
-        <hr className="w-3/4 mt-8 mb-8" style={{ borderColor: "var(--text)", opacity: 0.3 }} />
-        <div style={{ width: "100%", overflow: "hidden", display: "flex", justifyContent: "center" }}>
-          <DecryptedText
-            text="Welcome to Ki"
-            speed={80}
-            animateOn="view"
-            sequential={true}
-            revealDirection="start"
-            className="italic text-3xl mb-8 font-medium"
-            encryptedClassName="italic text-3xl mb-8 font-medium"
-            parentClassName="block"
-            style={{ 
-              color: "var(--text)", 
-              overflow: "hidden", 
-              width: "fit-content", 
-              minWidth: "fit-content",
-              paddingRight: "4px",
-              textRendering: "optimizeLegibility",
-              backfaceVisibility: "hidden",
-              WebkitBackfaceVisibility: "hidden"
-            }}
-          />
-        </div>
-        <hr className="w-3/4 mt-8 mb-8" style={{ borderColor: "var(--text)", opacity: 0.3 }} />
+        {/*
         <div className="w-3/4 max-w-2xl flex justify-center">
           <a
             href="/mind/12-favorite-problems"
@@ -75,7 +130,7 @@ export default function MindPage() {
             12 Favorite Problems
           </a>
         </div>
-
+        */}
       </div>
     </>
   );
