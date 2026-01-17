@@ -185,23 +185,27 @@ export default function Garden({ onLighthouseClick }: GardenProps) {
 
     // Create camera with responsive positioning
     const camera = new THREE.PerspectiveCamera(
-      60,
+      65,
       window.innerWidth / window.innerHeight,
       0.1,
       100
     );
 
+    const updateCameraView = (mobileView: boolean) => {
+      // Wider, farther framing to emphasize the full scene + distant lighthouse
+      camera.fov = mobileView ? 68 : 64;
+      if (mobileView) {
+        camera.position.set(5.2, 3, 8.2);
+      } else {
+        camera.position.set(7.2, 3.9, 10.2);
+      }
+      camera.lookAt(-2, 1.5, -2);
+      camera.updateProjectionMatrix();
+    };
+
     // Adjust camera based on screen size
     const isMobile = window.innerWidth < 768;
-    if (isMobile) {
-      // Mobile: Position camera to center lighthouse at (-2, 0, -2)
-      camera.position.set(3, 2.5, 4);
-      camera.lookAt(-2, 1.5, -2); // Look directly at lighthouse
-    } else {
-      // Desktop: Original positioning
-      camera.position.set(5, 2.5, 6);
-      camera.lookAt(0, 1, 0);
-    }
+    updateCameraView(isMobile);
     console.log("Camera created");
 
     // Create renderer
@@ -424,13 +428,7 @@ export default function Garden({ onLighthouseClick }: GardenProps) {
 
       // Adjust camera position based on new screen size
       const isMobile = window.innerWidth < 768;
-      if (isMobile) {
-        camera.position.set(3, 2.5, 4);
-        camera.lookAt(-2, 1.5, -2);
-      } else {
-        camera.position.set(5, 2.5, 6);
-        camera.lookAt(0, 1, 0);
-      }
+      updateCameraView(isMobile);
     };
     window.addEventListener("resize", handleResize);
 
