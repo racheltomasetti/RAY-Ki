@@ -1,15 +1,37 @@
-"use client";
-
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { getAllPosts } from "@/lib/mdx";
+import PostCard from "./components/PostCard";
 
 export default function Home() {
-  const router = useRouter();
+  const posts = getAllPosts();
 
-  useEffect(() => {
-    // Redirect to garden page on first visit
-    router.push("/garden");
-  }, [router]);
+  return (
+    <div className="min-h-screen bg-[var(--bg)]">
+      {/* Header */}
+      <header className="border-b border-[var(--ui-2)] bg-[var(--bg)]">
+        <div className="max-w-6xl mx-auto px-6 py-8">
+          <h1 className="text-4xl md:text-5xl font-bold text-[var(--tx)] text-center">
+            into the mind
+          </h1>
+        </div>
+      </header>
 
-  return null;
+      {/* Posts Grid */}
+      <main className="max-w-6xl mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {posts.map((post) => (
+            <PostCard key={post.slug} post={post} />
+          ))}
+        </div>
+
+        {/* Empty State */}
+        {posts.length === 0 && (
+          <div className="text-center py-20">
+            <p className="text-2xl text-[var(--tx-2)] italic">
+              coming soon... 
+            </p>
+          </div>
+        )}
+      </main>
+    </div>
+  );
 }
