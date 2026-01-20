@@ -9,33 +9,7 @@ interface PostCardProps {
 
 export default function PostCard({ post }: PostCardProps) {
   const { slug, frontmatter } = post;
-  const { title, created, category, featured_image } = frontmatter;
-
-  // Format created date as "Created on January 20, 2026"
-  // Parse date string (YYYY-MM-DD) as local time to avoid timezone issues
-  const createdStr = String(created);
-  let formattedDate: string;
-  
-  try {
-    if (createdStr.includes('-')) {
-      const [year, month, day] = createdStr.split('-').map(Number);
-      const dateObj = new Date(year, month - 1, day); // month is 0-indexed
-      formattedDate = dateObj.toLocaleDateString("en-US", {
-        month: "long",
-        day: "numeric",
-        year: "numeric",
-      });
-    } else {
-      const dateObj = new Date(createdStr);
-      formattedDate = dateObj.toLocaleDateString("en-US", {
-        month: "long",
-        day: "numeric",
-        year: "numeric",
-      });
-    }
-  } catch {
-    formattedDate = createdStr;
-  }
+  const { title, category, featured_image } = frontmatter;
 
   // Get category slug for URL
   const categorySlug = getCategorySlug(category || "uncategorized");
@@ -58,14 +32,9 @@ export default function PostCard({ post }: PostCardProps) {
         {/* Content */}
         <div className="p-6">
           {/* Title */}
-          <h2 className="text-2xl md:text-3xl font-bold text-[var(--tx)] mb-3 group-hover:text-[var(--accent)] transition-colors">
+          <h2 className="text-2xl md:text-3xl font-bold text-[var(--tx)] group-hover:text-[var(--accent)] transition-colors">
             {title}
           </h2>
-
-          {/* Date */}
-          <div className="text-sm text-[var(--tx-2)]">
-            Created on {formattedDate}
-          </div>
         </div>
       </article>
     </Link>

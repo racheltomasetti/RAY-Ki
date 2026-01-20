@@ -6,8 +6,6 @@ export type Category =
 
 export interface PostFrontmatter {
   title: string;
-  created: string;
-  updated?: string;
   category: Category;
   featured_image?: string;
 }

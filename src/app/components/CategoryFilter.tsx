@@ -19,11 +19,6 @@ export default function CategoryFilter({ posts, categories }: CategoryFilterProp
     return acc;
   }, {} as Record<string, Post[]>);
 
-  // Filter categories to display based on selection
-  const displayCategories = selectedCategory
-    ? categories.filter(cat => cat === selectedCategory)
-    : categories;
-
   // Helper to get category slug
   const getCategorySlug = (category: string) => {
     return category.toLowerCase().replace(/\s+/g, "-");
@@ -37,7 +32,7 @@ export default function CategoryFilter({ posts, categories }: CategoryFilterProp
           <div className="flex flex-nowrap items-center justify-center gap-2 sm:gap-3">
             <button
               onClick={() => setSelectedCategory(null)}
-              className={`px-2 py-1 sm:px-4 sm:py-2 rounded-full font-medium font-poppins uppercase tracking-wide transition-all flex-shrink-0 text-sm sm:text-base min-w-[60px] sm:min-w-[80px] text-center ${
+              className={`px-2 py-1 sm:px-4 sm:py-2 rounded-full font-medium font-poppins uppercase tracking-wide transition-all flex-shrink-0 text-xs sm:text-base min-w-[60px] sm:min-w-[80px] text-center ${
                 selectedCategory === null
                   ? "text-[#54783fff]"
                   : "text-[var(--tx-2)] hover:text-[var(--tx)]"
@@ -57,7 +52,7 @@ export default function CategoryFilter({ posts, categories }: CategoryFilterProp
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(isSelected ? null : category)}
-                  className={`px-2 py-1 sm:px-4 sm:py-2 rounded-full font-medium font-poppins uppercase tracking-wide transition-all flex-shrink-0 text-sm sm:text-base min-w-[60px] sm:min-w-[80px] text-center ${
+                  className={`px-2 py-1 sm:px-4 sm:py-2 rounded-full font-medium font-poppins uppercase tracking-wide transition-all flex-shrink-0 text-xs sm:text-base min-w-[60px] sm:min-w-[80px] text-center ${
                     isSelected
                       ? ""
                       : "text-[var(--tx-2)] hover:text-[var(--tx)]"
@@ -84,11 +79,16 @@ export default function CategoryFilter({ posts, categories }: CategoryFilterProp
             const { slug } = post;
             const categorySlug = getCategorySlug(category);
             const postUrl = `/${categorySlug}/${slug}`;
+            const categoryColor = getCategoryColor(category);
 
             return (
               <li key={slug} className="list-disc list-inside">
                 <Link href={postUrl} className="group">
-                  <span className="text-2xl font-semibold text-[var(--tx)] group-hover:text-[var(--accent)] transition-colors">
+                  <span
+                    className="text-2xl font-semibold text-[var(--tx)] transition-colors"
+                    onMouseEnter={(e) => e.currentTarget.style.color = categoryColor}
+                    onMouseLeave={(e) => e.currentTarget.style.color = 'var(--tx)'}
+                  >
                     {title}
                   </span>
                 </Link>

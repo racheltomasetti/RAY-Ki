@@ -4,6 +4,7 @@ import { getPostBySlug, getCategorySlug, getAllPosts } from "@/lib/mdx";
 import MDXComponents from "@/components/MDXComponents";
 import Link from "next/link";
 import HeaderWithKi from "@/app/components/HeaderWithKi";
+import { getCategoryColor } from "@/lib/categoryColors";
 
 interface PostPageProps {
   params: Promise<{
@@ -31,59 +32,8 @@ export default async function PostPage({ params }: PostPageProps) {
   }
 
   const { frontmatter, content } = post;
-  const { title, created, updated, featured_image } = frontmatter;
-
-  // Format created date as "Created on January 20, 2026"
-  // Parse date string (YYYY-MM-DD) as local time to avoid timezone issues
-  let formattedCreated: string;
-  const createdStr = String(created);
-
-  try {
-    if (createdStr.includes('-')) {
-      const [year, month, day] = createdStr.split('-').map(Number);
-      const dateObj = new Date(year, month - 1, day); // month is 0-indexed
-      formattedCreated = dateObj.toLocaleDateString("en-US", {
-        month: "long",
-        day: "numeric",
-        year: "numeric",
-      });
-    } else {
-      const dateObj = new Date(createdStr);
-      formattedCreated = dateObj.toLocaleDateString("en-US", {
-        month: "long",
-        day: "numeric",
-        year: "numeric",
-      });
-    }
-  } catch {
-    formattedCreated = createdStr;
-  }
-
-  // Format updated date if it exists
-  let formattedUpdated: string | null = null;
-  if (updated) {
-    const updatedStr = String(updated);
-    try {
-      if (updatedStr.includes('-')) {
-        const [year, month, day] = updatedStr.split('-').map(Number);
-        const dateObj = new Date(year, month - 1, day); // month is 0-indexed
-        formattedUpdated = dateObj.toLocaleDateString("en-US", {
-          month: "long",
-          day: "numeric",
-          year: "numeric",
-        });
-      } else {
-        const dateObj = new Date(updatedStr);
-        formattedUpdated = dateObj.toLocaleDateString("en-US", {
-          month: "long",
-          day: "numeric",
-          year: "numeric",
-        });
-      }
-    } catch {
-      formattedUpdated = updatedStr;
-    }
-  }
+  const { title, category: postCategory } = frontmatter;
+  const categoryColor = getCategoryColor(postCategory);
 
   return (
     <div className="min-h-screen bg-[var(--bg)]">
@@ -96,21 +46,15 @@ export default async function PostPage({ params }: PostPageProps) {
 
       {/* Post Header */}
       <div className="flex items-center justify-center px-6 py-8">
-        <header className="bg-[var(--bg-2)] border border-[var(--ui-2)] rounded-lg p-6 shadow-sm w-full max-w-4xl">
+        <header 
+          className="bg-[var(--bg-2)] border rounded-lg p-6 shadow-sm w-fit"
+          style={{ borderColor: categoryColor, borderWidth: '2px' }}
+        >
           <div className="flex flex-col items-center">
             {/* Title */}
-            <h1 className="text-3xl font-semibold text-[var(--tx)] mb-4">
+            <h1 className="text-3xl font-semibold text-[var(--tx)]">
               {title}
             </h1>
-            <hr className="w-full border-[var(--ui-2)] mb-4" />
-
-            {/* Date */}
-            <div className="text-sm text-[var(--tx-2)]">
-              Created on {formattedCreated}
-              {formattedUpdated && (
-                <span> • Updated on {formattedUpdated}</span>
-              )}
-            </div>
           </div>
         </header>
       </div>

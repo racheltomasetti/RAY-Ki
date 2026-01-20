@@ -54,9 +54,9 @@ export function getAllPosts(): Post[] {
     });
   });
 
-  // Sort by created date (newest first)
+  // Sort alphabetically by title
   return allPosts.sort((a, b) => {
-    return new Date(b.frontmatter.created).getTime() - new Date(a.frontmatter.created).getTime();
+    return a.frontmatter.title.localeCompare(b.frontmatter.title, undefined, { sensitivity: 'base' });
   });
 }
 
@@ -102,23 +102,6 @@ export function getPostBySlug(slug: string, folder?: string): Post | null {
 
     const fileContents = fs.readFileSync(fullPath, "utf8");
     const { data, content } = matter(fileContents);
-
-    // Ensure created and updated dates are always strings to avoid timezone issues
-    if (data.created instanceof Date) {
-      // Convert Date back to YYYY-MM-DD string format
-      const year = data.created.getUTCFullYear();
-      const month = String(data.created.getUTCMonth() + 1).padStart(2, '0');
-      const day = String(data.created.getUTCDate()).padStart(2, '0');
-      data.created = `${year}-${month}-${day}`;
-    }
-
-    if (data.updated instanceof Date) {
-      // Convert Date back to YYYY-MM-DD string format
-      const year = data.updated.getUTCFullYear();
-      const month = String(data.updated.getUTCMonth() + 1).padStart(2, '0');
-      const day = String(data.updated.getUTCDate()).padStart(2, '0');
-      data.updated = `${year}-${month}-${day}`;
-    }
 
     return {
       slug,
