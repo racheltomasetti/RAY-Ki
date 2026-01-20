@@ -29,10 +29,10 @@ export default function CategoryFilter({ posts, categories }: CategoryFilterProp
       {/* Category Filters */}
       <div className="border-b border-[var(--ui-2)] bg-[var(--bg)]">
         <div className="max-w-6xl mx-auto px-3 sm:px-6 py-4 sm:py-6">
-          <div className="flex flex-nowrap items-center justify-center gap-2 sm:gap-3">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
             <button
               onClick={() => setSelectedCategory(null)}
-              className={`px-2 py-1 sm:px-4 sm:py-2 rounded-full font-medium font-poppins uppercase tracking-wide transition-all flex-shrink-0 text-xs sm:text-base min-w-[60px] sm:min-w-[80px] text-center ${
+              className={`px-2 py-1 sm:px-4 sm:py-2 rounded-full font-medium font-poppins uppercase tracking-wide transition-all flex-shrink-0 text-base min-w-[60px] sm:min-w-[80px] text-center ${
                 selectedCategory === null
                   ? "text-[#54783fff]"
                   : "text-[var(--tx-2)] hover:text-[var(--tx)]"
@@ -52,7 +52,7 @@ export default function CategoryFilter({ posts, categories }: CategoryFilterProp
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(isSelected ? null : category)}
-                  className={`px-2 py-1 sm:px-4 sm:py-2 rounded-full font-medium font-poppins uppercase tracking-wide transition-all flex-shrink-0 text-xs sm:text-base min-w-[60px] sm:min-w-[80px] text-center ${
+                  className={`px-2 py-1 sm:px-4 sm:py-2 rounded-full font-medium font-poppins uppercase tracking-wide transition-all flex-shrink-0 text-base min-w-[60px] sm:min-w-[80px] text-center ${
                     isSelected
                       ? ""
                       : "text-[var(--tx-2)] hover:text-[var(--tx)]"
