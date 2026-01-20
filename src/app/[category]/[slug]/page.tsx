@@ -3,7 +3,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { getPostBySlug, getCategorySlug, getAllPosts } from "@/lib/mdx";
 import MDXComponents from "@/components/MDXComponents";
 import Link from "next/link";
-import KiLogo from "@/app/components/KiLogo";
+import HeaderWithKi from "@/app/components/HeaderWithKi";
 
 interface PostPageProps {
   params: Promise<{
@@ -62,23 +62,12 @@ export default async function PostPage({ params }: PostPageProps) {
 
   return (
     <div className="min-h-screen bg-[var(--bg)]">
-      {/* Back to Feed */}
-      <div className="border-b border-[var(--ui-2)]">
-        <div className="max-w-4xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between relative">
-            <Link
-              href="/"
-              className="text-[var(--tx)] hover:font-bold transition-colors inline-flex items-center gap-2"
-            >
-              ← back
-            </Link>
-            <div className="absolute left-1/2 transform -translate-x-1/2">
-              <KiLogo />
-            </div>
-            <div className="w-16"></div>
-          </div>
+      {/* Header with Back Button */}
+      <header className="border-b border-[var(--ui-2)] bg-[var(--bg)]">
+        <div className="max-w-6xl mx-auto px-6 py-4">
+          <HeaderWithKi showBackButton={true} />
         </div>
-      </div>
+      </header>
 
       {/* Post Header */}
       <div className="flex items-center justify-center px-6 py-8">
