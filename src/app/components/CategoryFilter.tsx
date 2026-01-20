@@ -32,7 +32,7 @@ export default function CategoryFilter({ posts, categories }: CategoryFilterProp
           <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
             <button
               onClick={() => setSelectedCategory(null)}
-              className={`px-2 py-1 sm:px-4 sm:py-2 rounded-full font-medium font-poppins uppercase tracking-wide transition-all flex-shrink-0 text-base min-w-[60px] sm:min-w-[80px] text-center ${
+              className={`px-2 py-1 sm:px-4 sm:py-2 rounded-full font-medium font-poppins uppercase tracking-wide transition-all flex-shrink-0 text-lg min-w-[60px] sm:min-w-[80px] text-center ${
                 selectedCategory === null
                   ? "text-[#54783fff]"
                   : "text-[var(--tx-2)] hover:text-[var(--tx)]"
@@ -52,7 +52,7 @@ export default function CategoryFilter({ posts, categories }: CategoryFilterProp
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(isSelected ? null : category)}
-                  className={`px-2 py-1 sm:px-4 sm:py-2 rounded-full font-medium font-poppins uppercase tracking-wide transition-all flex-shrink-0 text-base min-w-[60px] sm:min-w-[80px] text-center ${
+                  className={`px-2 py-1 sm:px-4 sm:py-2 rounded-full font-medium font-poppins uppercase tracking-wide transition-all flex-shrink-0 text-lg min-w-[60px] sm:min-w-[80px] text-center ${
                     isSelected
                       ? ""
                       : "text-[var(--tx-2)] hover:text-[var(--tx)]"
