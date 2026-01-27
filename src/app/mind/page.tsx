@@ -2,7 +2,6 @@
 
 import { useTheme } from "@/app/contexts/ThemeContext";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function MindPage() {
   const { theme } = useTheme();
@@ -14,8 +13,10 @@ export default function MindPage() {
       className="min-h-screen w-full flex flex-col items-center justify-center"
       style={{ backgroundColor: "var(--bg)" }}
     >
-      <Link
-        href="/"
+      <a
+        href="https://www.unlock-ki.com"
+        target="_blank"
+        rel="noopener noreferrer"
         className="cursor-pointer hover:opacity-80 transition-opacity"
       >
         <Image
@@ -26,7 +27,7 @@ export default function MindPage() {
           className="object-contain"
           priority
         />
-      </Link>
+      </a>
     </div>
   );
 }
