@@ -11,10 +11,10 @@ export default function Home() {
       </header>
 
       {/* Stream of Consciousness Content */}
-      <main className="max-w-4xl mx-auto px-6 py-6">
+      <main className="w-full px-6 py-6">
         <div className="prose prose-lg max-w-none text-[var(--tx)]">
           {/* ki journal */}
-          <h2 className="text-lg font-bold text-[var(--accent)]">Tuesday, January 27, 2026 @ 2:07 pm</h2>
+          <h2 className="text-lg font-bold">Tuesday, January 27, 2026 @ 2:07 pm</h2>
           {/* horizontal rule */}
           <hr className="my-4 border-t border-[var(--ui-2)]" />
           <p>
@@ -33,7 +33,7 @@ export default function Home() {
             <br/> to share ki.
             <br/> but i am still holding back.
             <br/> because i am afraid. 
-            <br/> but afraid of what? of being heard? being seen?
+            <br/> but afraid of what? of being heard, seen?
             <br/>
             <br/> no more of this. 
             <br/>i&apos;m tired of feeling this way. 
